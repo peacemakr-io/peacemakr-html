@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css?family=Poiret+One');
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: 'Noto Serif TC', serif;
+  font: 400 15px/1.8 'Noto Serif TC', serif;
+  color: #777;
+}
+
+.bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4, .bgimg-5 {
+  position: relative;
+  opacity: 0.65;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.bgimg-1 {
+  background-image: url("jpg/797.jpg");
+  height: 130%;
+}
+
+.bgimg-2 {
+  background-image: url("jpg/12525.jpg");
+  height: 120%;
+}
+
+.bgimg-3 {
+  background-image: url("jpg/7846.jpg");
+  height: 110%;
+}
+
+.caption-1 {
+  position: absolute;
+  left: 0;
+  top: 15%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+  font-size: 400%;
+  letter-spacing: 0px;
+  font: "Voltaire", voltaire;
+}
+
+.caption-2 {
+  position: absolute;
+  left: 50;
+  top: 65%;
+  width: 100%;
+  text-align: center;
+  color: #fff;
+  font-size: 250%;
+  letter-spacing: 10px;
+}
+
+.caption-3 {
+  position: absolute;
+  left: 0;
+  top: 42%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+  font-size: 300%;
+  letter-spacing: 30px;
+}
+
+
+.caption-white {
+  position: absolute;
+  left: 0;
+  top: 20%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+}
+
+.caption-white span.a.border {
+  /*background-color: #111;*/
+  color: #fff;
+  padding: 18px;
+  font-size: 35px;
+  letter-spacing: 30px;
+}
+
+.toptexts1 {
+    animation: fadeEffect 4s; /* fading effect in seconds */
+ }
+ 
+ .toptexts2 {
+    animation: fadeEffect 5s;
+ }
+
+ .toptexts3 {
+    animation: fadeEffect 5s;
+ }
+
+ @keyframes fadeEffect { /* from 0 to full opacity */
+    from {opacity: 0;}
+    to {opacity: 1;}
+ }
