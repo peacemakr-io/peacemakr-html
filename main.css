@@ -81,15 +81,15 @@ body, html {
   letter-spacing: 30px;
 }
 
-.toptexts1 {
+.fader1 {
     animation: fadeEffect 4s; /* fading effect in seconds */
  }
  
- .toptexts2 {
+ .fader2 {
     animation: fadeEffect 5s;
  }
 
- .toptexts3 {
+ .fader3 {
     animation: fadeEffect 5s;
  }
 
@@ -97,3 +97,47 @@ body, html {
     from {opacity: 0;}
     to {opacity: 1;}
  }
+
+/*------------------------/
+/------For phones---------/
+/------------------------*/
+
+@media screen and (max-width: 768px) {
+
+.caption-1 {
+    font-size: 300%;
+    margin-left: 0px;
+    text-align: center;
+}
+.caption-2 {
+    font-size: 200%;
+    margin-left: 0px;
+    top: 270px;
+    text-align: center;
+}
+.caption-3 {
+    font-size: 200%;
+    margin-left: 0px;
+    top: 200px;
+    text-align: center;
+}
+
+.fader1 {
+    animation: fadeEffect 0s; /* fading effect in seconds */
+ }
+ 
+ .fader2 {
+    animation: fadeEffect 0s;
+ }
+
+ .fader3 {
+    animation: fadeEffect 0s;
+ }
+
+ @keyframes fadeEffect { /* from 0 to full opacity*/
+    from {opacity: 0;}
+    to {opacity: 1;}
+ }
+
+
+}
