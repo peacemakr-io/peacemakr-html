@@ -1,8 +1,6 @@
-if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+//var fader2 = document.getElementById("fader2");var topPos = fader2.offsetTop;
 
-
-
-
+if( /Android|webOS|iPhone|iPod|iPad|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
    }else
    {
     window.addEventListener("scroll", function() {showFunction()});
@@ -15,3 +13,4 @@ if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(naviga
         } 
     }
 }
+
