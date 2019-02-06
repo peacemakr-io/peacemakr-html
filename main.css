@@ -36,7 +36,7 @@ body, html {
   width: 100%;
   text-align: center;
   color: #000;
-  font-size: 400%;
+  font-size: 500%;
   letter-spacing: 0px;
   font: "Voltaire", voltaire;
 }
@@ -44,22 +44,22 @@ body, html {
 .caption-2 {
   position: absolute;
   left: 50;
-  top: 65%;
+  top: 50%;
   width: 100%;
   text-align: center;
   color: #fff;
-  font-size: 250%;
+  font-size: 350%;
   letter-spacing: 10px;
 }
 
 .caption-3 {
   position: absolute;
   left: 0;
-  top: 42%;
+  top: 24%;
   width: 100%;
   text-align: center;
   color: #000;
-  font-size: 300%;
+  font-size: 500%;
   letter-spacing: 30px;
 }
 
@@ -81,19 +81,67 @@ body, html {
   letter-spacing: 30px;
 }
 
-.toptexts1 {
-    animation: fadeEffect 4s; /* fading effect in seconds */
+.fader1 {
+    animation: fadeEffect 6s; /* fading effect in seconds */
  }
  
- .toptexts2 {
-    animation: fadeEffect 5s;
+ .fader2 {
+    animation: fadeEffect 6s;
  }
 
- .toptexts3 {
-    animation: fadeEffect 5s;
+ .fader3 {
+    animation: fadeEffect 6s;
  }
 
  @keyframes fadeEffect { /* from 0 to full opacity */
     from {opacity: 0;}
     to {opacity: 1;}
  }
+
+/*------------------------/
+/------For phones---------/
+/------------------------*/
+
+/* @media only screen and (max-width:000px) ,  screen and (max-height: 000px) */
+@media screen and (max-width: 768px) {
+
+    .caption-1 {
+        position: absolute;
+        left: 0;
+        top: 15%;
+        width: 100%;
+        text-align: center;
+        color: #000;
+        font-size: 400%;
+        letter-spacing: 0px;
+        font: "Voltaire", voltaire;
+      }
+      
+      .caption-2 {
+        position: absolute;
+        left: 50;
+        top: 30%;
+        width: 100%;
+        text-align: center;
+        color: #fff;
+        font-size: 200%;
+        letter-spacing: 10px;
+      }
+      
+      .caption-3 {
+        position: absolute;
+        left: 0;
+        top: 32%;
+        width: 105%;
+        text-align: center;
+        color: #000;
+        font-size: 300%;
+        letter-spacing: 30px;
+      }
+
+      @keyframes fadeEffect { /* from 0 to full opacity */
+        from {opacity: 1;}
+        to {opacity: 1;}
+     }
+
+}
