@@ -17,4 +17,4 @@
 .wp-block-separator.has-background:not(.is-style-wide):not(.is-style-dots) {height: 2px;}
 .wp-block-table {border-collapse: collapse;}
 .wp-block-table td, .wp-block-table th {padding: .5em;border: 1px solid;word-break: normal;}
-.wp-block-video figcaption {color: #555d66;font-size: 13px;text-align: center;}
+.wp-block-table figcaption, .wp-block-video figcaption {color: #555d66;font-size: 13px;text-align: center;}

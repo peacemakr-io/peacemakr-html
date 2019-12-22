@@ -178,6 +178,9 @@
 .wp-block-navigation ul ul {list-style: none;margin-left: 0;}
 .wp-block-navigation ul ul li a {padding-top: 8px;padding-bottom: 8px;}
 .wp-block-navigation .has-sub-menu>a:after {content: " ▼";display: inline-block;font-size: .6rem;height: inherit;width: inherit;}
+.wp-block-navigation.items-justified-left>ul {justify-content: flex-start;}
+.wp-block-navigation.items-justified-center>ul {justify-content: center;}
+.wp-block-navigation.items-justified-right>ul {justify-content: flex-end;}
 .is-style-dark>ul>li>ul {background: #333;border-radius: 4px;}
 .is-style-dark>ul>li>ul a {text-decoration: none;color: #fff;}
 .is-style-dark>ul>li>ul a:hover {text-decoration: underline;color: #eee;}
@@ -187,7 +190,6 @@
 .is-large-text {font-size: 36px;}
 .is-larger-text {font-size: 48px;}
 .has-drop-cap:not(:focus):first-letter {float: left;font-size: 8.4em;line-height: .68;font-weight: 100;margin: .05em .1em 0 0;text-transform: uppercase;font-style: normal;}
-.has-drop-cap:not(:focus):after {content: "";display: table;clear: both;padding-top: 14px;}
 p.has-background {padding: 20px 30px;}
 p.has-text-color a {color: inherit;}
 .wp-block-pullquote {padding: 3em 0;margin-left: 0;margin-right: 0;text-align: center;}
