@@ -1,0 +1,154 @@
+/*const theme = createMuiTheme({
+	palette: {
+		type: 'dark',
+		primary: {
+			// light: will be calculated from palette.primary.main,
+			main: '#f9dfa5', // Links, titles, save button backgrounds (no mouse)
+			dark: '#626262', // Backdrops to checkboxs, save button (mouse)
+			light: '#828282', // Regular texts
+			contrastText: '#323232', // Save button text (no mouse + mouse)
+			// dark: will be calculated from palette.primary.main,
+			// contrastText: will be calculated to contrast with palette.primary.main
+		},
+		secondary: {
+			dark: '#323232',
+			main: '#323232', // Top bar, background
+			light: '#ffffff',
+			// dark: will be calculated from palette.secondary.main,
+			contrastText: '#f9dfa5', // Top bar, text
+		},
+		// error: will use the default color
+	},
+	typography: {
+		fontFamily: "Open Sans",
+		fontSize: 16,
+	},
+});*/
+
+
+
+fieldset { display: none; }
+
+hr {
+    border: none;
+    height: 1px;
+     Set the hr color 
+    color: #f9dfa5;
+    background-color: #f9dfa5;
+}
+
+h1, h2, h3, h4 {
+	font-family: avenir next,avenir,sans-serif;
+}
+
+h3, h4 {
+	text-align: left;
+}
+
+p {
+	text-align: left;
+}
+
+ul {
+	list-style-position: inside;
+	text-align: left;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.features_ul {
+	list-style-type: none;
+	list-style-position: inside;
+	text-align: left;
+    list-style: square;
+    margin-left: 28px;
+}
+
+.request_quote {
+	color: #828282;
+}
+
+a:link, a:visited, a:active {
+  color: #323232;
+}
+a:hover {
+  color: #828282;
+  transition-duration: 1s;
+  transition-timing-function: linear;
+}
+
+input[type='checkbox'] {
+    width:18px;
+    height:18px;
+    background:#f9dfa5;
+    border-radius:5px;
+    border:2px solid #f9dfa5;
+    padding: 0px;
+    margin: 10px;
+}
+input[type='checkbox']:checked {
+    background: #f9dfa5;
+}
+
+input:hover[type="submit"] 
+{
+	background: #323232;
+	color: #f9dfa5;
+	transition-duration: 1s;
+  	transition-timing-function: linear;
+}
+
+.peacemakr_hover:hover {
+  color: #f9dfa5;
+  transition-duration: 1s;
+  transition-timing-function: linear;
+}
+.peacemakr_light_navlink:link, .peacemakr_light_navlink:visited, .peacemakr_light_navlink:active {
+	color: #828282;
+}
+
+.peacemakr_price_table {
+	border-radius: 25px;
+  	border: 0px solid #828282;
+  	color: #f9dfa5;
+  	padding: 20px;
+}
+
+.peacemakr_action_button {
+	border-radius: 25px;
+	border: 0px;
+  	padding: 20px;
+}
+
+.peacemakr_small_action {
+	border-radius: 10px;
+	border: 0px;
+  	padding: 5px;
+}
+
+.peacemakr_dark {
+	color: #323232;
+}
+.peacemakr_light {
+	color: #828282;
+}
+.peacemakr_gold {
+	color: #f9dfa5;
+}
+
+.align_left {
+	text-align: left;
+}
+
+.peacemakr_dark_background {
+	background-color: #323232;
+}
+.peacemakr_light_background {
+	background-color: #828282;
+}
+
+
+.peacemakr_font {
+  font-family: avenir next,avenir,sans-serif;
+}
