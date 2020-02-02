@@ -108,6 +108,14 @@ input:hover[type="submit"]
   	transition-timing-function: linear;
 }
 
+input:hover[type="button"] 
+{
+	background: #323232;
+	color: #f9dfa5;
+	transition-duration: .2s;
+  	transition-timing-function: linear;
+}
+
 .peacemakr_price_table {
 	border-radius: 25px;
   	border: 0px solid #828282;
