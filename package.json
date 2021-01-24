@@ -4,9 +4,10 @@
   "description": "peacemakr.io website",
   "main": "index.js",
   "scripts": {
+    "clean": "rm -rf ./.cache ./dist",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "parcel src/index.html --public-url /",
-    "build": "parcel build src/index.html --public-url /"
+    "start": "npm run clean && parcel src/index.html",
+    "build": "npm run clean && parcel build src/index.html"
   },
   "author": "",
   "license": "ISC",
