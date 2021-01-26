@@ -4,10 +4,11 @@
   "description": "peacemakr.io website",
   "main": "index.js",
   "scripts": {
-    "clean": "rm -rf ./.cache ./localdev",
+    "clean-localdev": "rm -rf ./.cache ./localdev",
+    "clean-prod": "rm -rf ./.cache ./prod",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "npm run clean && parcel -d ./localdev src/index.html --public-url /",
-    "build": "npm run clean && parcel build -d ./prod src/index.html --public-url /"
+    "start": "npm run clean-localdev && parcel -d ./localdev src/index.html --public-url /",
+    "build": "npm run clean-prod && parcel build -d ./prod src/index.html --public-url /"
   },
   "author": "",
   "license": "ISC",
