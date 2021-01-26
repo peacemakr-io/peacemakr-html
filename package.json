@@ -5,10 +5,10 @@
   "main": "index.js",
   "scripts": {
     "clean-localdev": "rm -rf ./.cache ./localdev",
-    "clean-prod": "rm -rf ./.cache ./prod",
+    "clean-prod": "rm -rf ./.cache docs",
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "npm run clean-localdev && parcel -d ./localdev src/index.html --public-url /",
-    "build": "npm run clean-prod && parcel build -d ./prod src/index.html --public-url /"
+    "build": "npm run clean-prod && parcel build -d ./docs src/index.html --public-url /"
   },
   "author": "",
   "license": "ISC",
