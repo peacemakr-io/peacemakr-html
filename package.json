@@ -5,10 +5,10 @@
   "main": "index.js",
   "scripts": {
     "clean-localdev": "rm -rf ./.cache ./localdev",
-    "clean-prod": "rm -rf ./.cache docs",
+    "clean-prod": "rm -rf ./.cache ./docs",
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "npm run clean-localdev && parcel -d ./localdev src/index.html --public-url /",
-    "build": "npm run clean-prod && parcel build -d ./docs src/index.html --public-url /"
+    "build": "npm run clean-prod && parcel build -d ./docs src/index.html --public-url / && cp CNAME favicon.ico ./docs"
   },
   "author": "",
   "license": "ISC",
