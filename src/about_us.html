@@ -38,7 +38,7 @@
 
             <!-- Navigation bar-->
             <div class="relative pt-6 px-4 sm:px-6 lg:px-8">
-                <nav class="relative flex items-center justify-between sm:h-10 lg:justify-start"
+                <nav id="site-menu" class="relative flex items-center justify-between sm:h-10 lg:justify-start"
                      aria-label="Global">
                     <div class="flex items-center flex-grow flex-shrink-0 lg:flex-grow-0">
                         <div class="flex items-center justify-between w-full md:w-auto">
@@ -50,8 +50,8 @@
                             <div class="-mr-2 flex items-center md:hidden">
                                 <button type="button"
                                         class="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500"
-                                        onclick="toggle()"
-                                        id="main-menu" aria-haspopup="true">
+                                        id="main-menu" aria-haspopup="true"
+                                        onclick="navToggle();">
                                     <span class="sr-only">Open main menu</span>
                                     <!-- Heroicon name: menu -->
                                     <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none"
@@ -59,10 +59,6 @@
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                               d="M4 6h16M4 12h16M4 18h16"/>
                                     </svg>
-                                    <script>
-                                        const mainmenu = document.getElementById('menu');
-                                        const show = () => mainmenu.classList.toggle("show");
-                                    </script>
                                 </button>
                             </div>
                         </div>
@@ -101,7 +97,7 @@
                         <div class="-mr-2">
                             <button type="button"
                                     class="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500"
-                                    onclick="toggle()">
+                                    onclick="navToggle();">
                                 <span class="sr-only">Close main menu</span>
                                 <!-- Heroicon name: x -->
                                 <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none"
@@ -109,10 +105,6 @@
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                           d="M6 18L18 6M6 6l12 12"/>
                                 </svg>
-                                <script>
-                                    const menu = document.getElementById('menu');
-                                    const toggle = () => menu.classList.toggle("hidden");
-                                </script>
                             </button>
                         </div>
                     </div>
@@ -140,6 +132,15 @@
                     </div>
                 </div>
             </div>
+            <script>
+                function navToggle() {
+                    let btn = document.getElementById('main-menu');
+                    let nav = document.getElementById('menu');
+
+                    btn.classList.toggle('open');
+                    nav.classList.toggle('hidden');
+                }
+            </script>
             <!-- End navigation bar -->
 
             <main class="mt-10 mx-auto max-w-7xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-28">
