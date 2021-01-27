@@ -61,6 +61,15 @@
                                               d="M4 6h16M4 12h16M4 18h16"/>
                                     </svg>
                                 </button>
+                                <script>
+                                    export function navToggle() {
+                                        let btn = document.getElementById('main-menu');
+                                        let nav = document.getElementById('menu');
+
+                                        btn.classList.toggle('open');
+                                        nav.classList.toggle('hidden');
+                                    }
+                                </script>
                             </div>
                         </div>
                     </div>
@@ -133,15 +142,6 @@
                     </div>
                 </div>
             </div>
-            <script>
-                function navToggle() {
-                    let btn = document.getElementById('main-menu');
-                    let nav = document.getElementById('menu');
-
-                    btn.classList.toggle('open');
-                    nav.classList.toggle('hidden');
-                }
-            </script>
             <!-- End navigation bar -->
 
             <main class="mt-10 mx-auto max-w-7xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-28">
