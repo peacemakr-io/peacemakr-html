@@ -34,7 +34,7 @@ jobs:
         if: ${{ github.event_name == 'pull_request' }}
         uses: EndBug/add-and-commit@v7
         with:
-          add: ['docs/', 'CNAME']
+          add: "['docs/', 'CNAME']"
           message: '(GH actions bot) Build production website'
           branch: staging
 
@@ -43,5 +43,5 @@ jobs:
         if: ${{ github.event_name == 'push' }}
         uses: EndBug/add-and-commit@v7
         with:
-          add: ['docs/']
+          add: "['docs/']"
           message: '(GH actions bot) Build production website'
