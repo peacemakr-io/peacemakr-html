@@ -1,0 +1,47 @@
+name: CI
+
+on:
+  push:
+    branches: [master, live-prod]
+  pull_request:
+    branches: [master, live-prod]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Build the website prep
+        uses: actions/setup-node@v1
+        with:
+          node-version: 15.x
+      - name: Build the website
+        run: |
+          npm i
+          npm run build
+
+      - name: PRs go to staging
+        if: ${{ github.event_name == 'pull_request' }}
+        run: |
+          echo "staging.peacemakr.io" > CNAME
+
+      - name: Commit to staging
+        # On PR, add CNAME and push to staging
+        if: ${{ github.event_name == 'pull_request' }}
+        uses: EndBug/add-and-commit@v7
+        with:
+          add: "['docs/', 'CNAME']"
+          message: '(GH actions bot) Build production website'
+          branch: staging
+
+      - name: Commit static site
+        # On PR merged (i.e. push to master) push to the branch
+        if: ${{ github.event_name == 'push' }}
+        uses: EndBug/add-and-commit@v7
+        with:
+          add: "['docs/']"
+          message: '(GH actions bot) Build production website'
