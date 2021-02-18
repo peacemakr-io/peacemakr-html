@@ -15,10 +15,11 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
 
-      - name: Build the website
+      - name: Build the website prep
         uses: actions/setup-node@v1
         with:
           node-version: 15.x
+      - name: Build the website
         run: |
           npm i
           npm run build
