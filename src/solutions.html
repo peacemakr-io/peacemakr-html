@@ -1,0 +1,1287 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Peacemakr | Peacemakr</title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="./images/peacemakr.ico" type="image/x-icon"/>
+    <meta property="og:title" content="Peacemakr"/>
+    <meta property="og:description"
+          content="The Secure Data Platform that solves all the challenges of data security with on-prem, private-cloud, and hybrid root of trusts that reduces costs and time-to-market."/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:url" content="https://peacemakr.io/"/>
+    <meta itemprop="name" content="Peacemakr">
+    <meta itemprop="description"
+          content="The Secure Data Platform that solves all the challenges of data security with on-prem, private-cloud, and hybrid root of trusts that reduces costs and time-to-market.">
+    <meta name="twitter:card" content="summary"/>
+    <meta name="twitter:title" content="Peacemakr"/>
+    <meta name="twitter:description"
+          content="The Secure Data Platform that solves all the challenges of data security with on-prem, private-cloud, and hybrid root of trusts that reduces costs and time-to-market."/>
+    <script src="navbar.js" type="text/javascript"></script>
+    <script src="animatedtext.js" type="text/javascript"></script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-69K0GEH6J9"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-69K0GEH6J9');
+    </script>
+</head>
+
+<body>
+<div class="relative bg-white overflow-hidden">
+    <div class="max-w-7xl mx-auto">
+        <div class="relative z-10 pb-8 bg-white sm:pb-16 md:pb-20 lg:max-w-2xl lg:w-full lg:pb-28 xl:pb-32">
+            <svg class="hidden lg:block absolute right-0 inset-y-0 h-full w-48 text-white transform translate-x-1/2"
+                 fill="currentColor" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true">
+                <polygon points="50,0 100,0 50,100 0,100"/>
+            </svg>
+
+            <!-- Navigation bar-->
+            <div class="relative pt-6 px-4 sm:px-6 lg:px-8">
+                <nav id="site-menu" class="relative flex items-center justify-between sm:h-10 lg:justify-start"
+                     aria-label="Global">
+                    <div class="flex items-center flex-grow flex-shrink-0 lg:flex-grow-0">
+                        <div class="flex items-center justify-between w-full md:w-auto">
+                            <a href="/">
+                                <span class="sr-only">Peacemakr</span>
+                                <img class="h-6 w-auto sm:h-7"
+                                     src="./images/p_logo.png">
+                            </a>
+                            <div class="-mr-2 flex items-center md:hidden">
+                                <button type="button"
+                                        class="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500"
+                                        id="main-menu" aria-haspopup="true"
+                                        onclick="navToggle();">
+                                    <span class="sr-only">Open main menu</span>
+                                    <!-- Heroicon name: menu -->
+                                    <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                         viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                              d="M4 6h16M4 12h16M4 18h16"/>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hidden md:block md:ml-10 md:pr-4 md:space-x-8">
+
+                        <a href="solutions.html" class="font-medium text-gray-500 hover:text-gray-900">Solutions</a>
+
+                        <a href="engineers.html" class="font-medium text-gray-500 hover:text-gray-900">Engineers</a>
+
+                        <a href="media.html" class="font-medium text-gray-500 hover:text-gray-900">Media</a>
+
+                        <a href="about_us.html" class="font-medium text-gray-500 hover:text-gray-900">About Us</a>
+
+                        <a href="https://admin.peacemakr.io/#/login"
+                           class="font-medium text-indigo-600 hover:text-indigo-500">Log in</a>
+                    </div>
+                </nav>
+            </div>
+
+            <!--
+      Mobile menu, show/hide based on menu open state.
+
+      Entering: "duration-150 ease-out"
+        From: "opacity-0 scale-95"
+        To: "opacity-100 scale-100"
+      Leaving: "duration-100 ease-in"
+        From: "opacity-100 scale-100"
+        To: "opacity-0 scale-95"
+    -->
+
+            <div id="menu" class="absolute top-0 inset-x-0 p-2 transition transform origin-top-right hidden">
+                <div class="rounded-lg shadow-md bg-white ring-1 ring-black ring-opacity-5 overflow-hidden">
+                    <div class="px-5 pt-4 flex items-center justify-between">
+                        <div>
+                            <img class="h-6 w-auto"
+                                 src="./images/p_logo.png" alt="">
+                        </div>
+                        <div class="-mr-2">
+                            <button type="button"
+                                    class="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500"
+                                    onclick="navToggle();">
+                                <span class="sr-only">Close main menu</span>
+                                <!-- Heroicon name: x -->
+                                <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                     viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                          d="M6 18L18 6M6 6l12 12"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div role="menu" aria-orientation="vertical" aria-labelledby="main-menu">
+                        <div class="px-2 pt-2 pb-3 space-y-1" role="none">
+                            <a href="/"
+                               class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50"
+                               role="menuitem">Home</a>
+
+                            <a href="solutions.html"
+                               class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50"
+                               role="menuitem">Solutions</a>
+
+                               <a href="engineers.html"
+                               class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50"
+                               role="menuitem">Engieers</a>
+
+                            <a href="media.html"
+                               class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50"
+                               role="menuitem">Media</a>
+
+                            <a href="about_us.html"
+                               class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50"
+                               role="menuitem">About Us</a>
+                        </div>
+                        <div role="none">
+                            <a href="https://admin.peacemakr.io/#/login"
+                               class="block w-full px-5 py-3 text-center font-medium text-indigo-600 bg-gray-50 hover:bg-gray-100"
+                               role="menuitem">
+                                Log in
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End navigation bar -->
+
+            <main class="mt-10 mx-auto max-w-7xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-28">
+                <div class="sm:text-center lg:text-left">
+                    <h1 class="text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl">
+                        <span class="block xl:inline">Peacemakr <br/></span>
+                        <span class="block text-indigo-600 xl:inline">Data Security <br>for every application</span>
+                    </h1>
+                    <p id="type it out"
+                            class="mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
+                        Data security 
+
+                            <a href="" class="typewrite" data-period="1000" data-type='[ "that just works", "so strong that enterprise customers sign", "so simple that architects love it", "so rigorous that security teams love it", "so robust that you almost forget its there", "so portable that it protect data everywhere", "so compliant that lawyers stop asking questions", "so fast that performance teams do not even notice"]'>
+    <span class="wrap"></span>
+  </a>
+
+                    </p>
+                </div>
+            </main>
+        </div>
+    </div>
+    <div class="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
+        <img class="h-56 w-full object-cover sm:h-72 md:h-96 lg:w-full lg:h-full
+        " src="/images/cover_bg.jpg" alt="">
+    </div>
+</div>
+
+
+<main>
+
+    <!-- CTA Data Security Assessment -->
+    <div class="bg-gray-50">
+        <div
+                class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8 lg:flex lg:items-center lg:justify-between">
+            <h2 class="text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl">
+                <span class="block">Finally, a drop-in solution to all your Data Security needs</span>
+                <span class="block text-indigo-600">That both Sales and Engineers love</span>
+            </h2>
+            <div class="mt-8 flex lg:mt-0 lg:flex-shrink-0">
+                <div class="inline-flex rounded-md shadow">
+                    <a href="#"
+                       class="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700"
+                        onclick="location.href='https://admin.peacemakr.io'">
+                        Sign Up for Free Now
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="bg-white">
+        <div class="max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:py-24 lg:px-8 lg:grid lg:grid-cols-3 lg:gap-x-8">
+            <div>
+                <h2 class="text-base font-semibold text-indigo-600 uppercase tracking-wide">Secure</h2>
+                <p class="mt-2 text-3xl font-extrabold text-gray-900">E2E-Encryption</p>
+                <p class="mt-4 text-lg text-gray-500">Peacemakr&rsquo;s Secure Data Platform makes it easy to accept customer-encrypted data on any api.</p>
+            </div>
+            <div class="mt-12 lg:mt-0 lg:col-span-2">
+                <dl
+                        class="space-y-10 sm:space-y-0 sm:grid sm:grid-cols-2 sm:grid-rows-3 sm:grid-flow-col sm:gap-x-6 sm:gap-y-10 lg:gap-x-8">
+                    <div class="flex">
+                        <!-- Heroicon name: check -->
+                        <svg class="flex-shrink-0 h-6 w-6 text-green-500" xmlns="http://www.w3.org/2000/svg"
+                             fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                  d="M5 13l4 4L19 7"/>
+                        </svg>
+                        <div class="ml-3">
+                            <dt class="text-lg leading-6 font-medium text-gray-900">
+                                Secure and Scalable Key Delivery
+                            </dt>
+                        </div>
+                    </div>
+
+                    <div class="flex">
+                        <!-- Heroicon name: check -->
+                        <svg class="flex-shrink-0 h-6 w-6 text-green-500" xmlns="http://www.w3.org/2000/svg"
+                             fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                  d="M5 13l4 4L19 7"/>
+                        </svg>
+                        <div class="ml-3">
+                            <dt class="text-lg leading-6 font-medium text-gray-900">
+                                Backward Compatibility
+                            </dt>
+                        </div>
+                    </div>
+
+                    <div class="flex">
+                        <!-- Heroicon name: check -->
+                        <svg class="flex-shrink-0 h-6 w-6 text-green-500" xmlns="http://www.w3.org/2000/svg"
+                             fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                  d="M5 13l4 4L19 7"/>
+                        </svg>
+                        <div class="ml-3">
+                            <dt class="text-lg leading-6 font-medium text-gray-900">
+                                Message Signature and Verification
+                            </dt>
+                        </div>
+                    </div>
+
+                    <div class="flex">
+                        <!-- Heroicon name: check -->
+                        <svg class="flex-shrink-0 h-6 w-6 text-green-500" xmlns="http://www.w3.org/2000/svg"
+                             fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                  d="M5 13l4 4L19 7"/>
+                        </svg>
+                        <div class="ml-3">
+                            <dt class="text-lg leading-6 font-medium text-gray-900">
+                                Automatic Rotations
+                            </dt>
+                        </div>
+                    </div>
+
+
+                    <div class="flex">
+                        <!-- Heroicon name: check -->
+                        <svg class="flex-shrink-0 h-6 w-6 text-green-500" xmlns="http://www.w3.org/2000/svg"
+                             fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                  d="M5 13l4 4L19 7"/>
+                        </svg>
+                        <div class="ml-3">
+                            <dt class="text-lg leading-6 font-medium text-gray-900">
+                                Automatic Key Expiration
+                            </dt>
+                        </div>
+                    </div>
+
+                </dl>
+            </div>
+        </div>
+    </div>
+
+    <div class="bg-gray-50">
+        <div class="max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:py-24 lg:px-8 lg:grid lg:grid-cols-3 lg:gap-x-8">
+            <div>
+                <h2 class="text-base font-semibold text-indigo-600 uppercase tracking-wide">Zero-Trust</h2>
+                <p class="mt-2 text-3xl font-extrabold text-gray-900">Bring-Your-Own-Keys</p>
+                <p class="mt-4 text-lg text-gray-500">Invite your customers to encrypt their own data, and use it in your multi-tenant SaaS.
+                </p>
+            </div>
+            <div class="mt-12 lg:mt-0 lg:col-span-2">
+                <dl
+                        class="space-y-10 sm:space-y-0 sm:grid sm:grid-cols-2 sm:grid-rows-2 sm:grid-flow-col sm:gap-x-6 sm:gap-y-10 lg:gap-x-8">
+                    <div class="flex">
+                        <!-- Heroicon name: check -->
+                        <svg class="flex-shrink-0 h-6 w-6 text-green-500" xmlns="http://www.w3.org/2000/svg"
+                             fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                  d="M5 13l4 4L19 7"/>
+                        </svg>
+                        <div class="ml-3">
+                            <dt class="text-lg leading-6 font-medium text-gray-900">
+                                Invite your customers to use their own Key Deriver
+                            </dt>
+                        </div>
+                    </div>
+
+                    <div class="flex">
+                        <!-- Heroicon name: check -->
+                        <svg class="flex-shrink-0 h-6 w-6 text-green-500" xmlns="http://www.w3.org/2000/svg"
+                             fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                  d="M5 13l4 4L19 7"/>
+                        </svg>
+                        <div class="ml-3">
+                            <dt class="text-lg leading-6 font-medium text-gray-900">
+                                Bring your keys, and your key's Security Policies
+                            </dt>
+                        </div>
+                    </div>
+
+                    <div class="flex">
+                        <!-- Heroicon name: check -->
+                        <svg class="flex-shrink-0 h-6 w-6 text-green-500" xmlns="http://www.w3.org/2000/svg"
+                             fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                  d="M5 13l4 4L19 7"/>
+                        </svg>
+                        <div class="ml-3">
+                            <dt class="text-lg leading-6 font-medium text-gray-900">
+                                Migrate your Key Deriver, anytime
+                            </dt>
+                        </div>
+                    </div>
+
+
+                    <div class="flex">
+                        <!-- Heroicon name: check -->
+                        <svg class="flex-shrink-0 h-6 w-6 text-green-500" xmlns="http://www.w3.org/2000/svg"
+                             fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                  d="M5 13l4 4L19 7"/>
+                        </svg>
+                        <div class="ml-3">
+                            <dt class="text-lg leading-6 font-medium text-gray-900">
+                                HSM friendly
+                            </dt>
+                        </div>
+                    </div>
+
+                </dl>
+            </div>
+        </div>
+    </div>
+
+    <div class="bg-white">
+        <div class="max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:py-24 lg:px-8 lg:grid lg:grid-cols-3 lg:gap-x-8">
+            <div>
+                <h2 class="text-base font-semibold text-indigo-600 uppercase tracking-wide">Headache Free</h2>
+                <p class="mt-2 text-3xl font-extrabold text-gray-900">Data Ownership</p>
+                <p class="mt-4 text-lg text-gray-500">Peacemakr provides the control over your data, to meet even the most
+                    rigorous threat models.</p>
+            </div>
+            <div class="mt-12 lg:mt-0 lg:col-span-2">
+                <dl
+                        class="space-y-10 sm:space-y-0 sm:grid sm:grid-cols-2 sm:grid-rows-4 sm:grid-flow-col sm:gap-x-6 sm:gap-y-10 lg:gap-x-8">
+                    <div class="flex">
+                        <!-- Heroicon name: check -->
+                        <svg class="flex-shrink-0 h-6 w-6 text-green-500" xmlns="http://www.w3.org/2000/svg"
+                             fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                  d="M5 13l4 4L19 7"/>
+                        </svg>
+                        <div class="ml-3">
+                            <dt class="text-lg leading-6 font-medium text-gray-900">
+                                Confidentiality 
+                            </dt>
+                        </div>
+                    </div>
+
+                    <div class="flex">
+                        <!-- Heroicon name: check -->
+                        <svg class="flex-shrink-0 h-6 w-6 text-green-500" xmlns="http://www.w3.org/2000/svg"
+                             fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                  d="M5 13l4 4L19 7"/>
+                        </svg>
+                        <div class="ml-3">
+                            <dt class="text-lg leading-6 font-medium text-gray-900">
+                                Integrity 
+                            </dt>
+                        </div>
+                    </div>
+
+                    <div class="flex">
+                        <!-- Heroicon name: check -->
+                        <svg class="flex-shrink-0 h-6 w-6 text-green-500" xmlns="http://www.w3.org/2000/svg"
+                             fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                  d="M5 13l4 4L19 7"/>
+                        </svg>
+                        <div class="ml-3">
+                            <dt class="text-lg leading-6 font-medium text-gray-900">
+                                Non-Repudiation
+                            </dt>
+                        </div>
+                    </div>
+
+                    <div class="flex">
+                        <!-- Heroicon name: check -->
+                        <svg class="flex-shrink-0 h-6 w-6 text-green-500" xmlns="http://www.w3.org/2000/svg"
+                             fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                  d="M5 13l4 4L19 7"/>
+                        </svg>
+                        <div class="ml-3">
+                            <dt class="text-lg leading-6 font-medium text-gray-900">
+                                Forward Secrecy
+                            </dt>
+                        </div>
+                    </div>
+
+
+                    <div class="flex">
+                        <!-- Heroicon name: check -->
+                        <svg class="flex-shrink-0 h-6 w-6 text-green-500" xmlns="http://www.w3.org/2000/svg"
+                             fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                  d="M5 13l4 4L19 7"/>
+                        </svg>
+                        <div class="ml-3">
+                            <dt class="text-lg leading-6 font-medium text-gray-900">
+                                Tamper-Detection
+                            </dt>
+                        </div>
+                    </div>
+
+                    <div class="flex">
+                        <!-- Heroicon name: check -->
+                        <svg class="flex-shrink-0 h-6 w-6 text-green-500" xmlns="http://www.w3.org/2000/svg"
+                             fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                  d="M5 13l4 4L19 7"/>
+                        </svg>
+                        <div class="ml-3">
+                            <dt class="text-lg leading-6 font-medium text-gray-900">
+                                Cryptoagility
+                            </dt>
+                        </div>
+                    </div>
+
+                    <div class="flex">
+                        <!-- Heroicon name: check -->
+                        <svg class="flex-shrink-0 h-6 w-6 text-green-500" xmlns="http://www.w3.org/2000/svg"
+                             fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                  d="M5 13l4 4L19 7"/>
+                        </svg>
+                        <div class="ml-3">
+                            <dt class="text-lg leading-6 font-medium text-gray-900">
+                                Centralized configuration
+                            </dt>
+                        </div>
+                    </div>
+
+                    <div class="flex">
+                        <!-- Heroicon name: check -->
+                        <svg class="flex-shrink-0 h-6 w-6 text-green-500" xmlns="http://www.w3.org/2000/svg"
+                             fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                  d="M5 13l4 4L19 7"/>
+                        </svg>
+                        <div class="ml-3">
+                            <dt class="text-lg leading-6 font-medium text-gray-900">
+                                Well-Versioned and Backward Compatible
+                            </dt>
+                        </div>
+                    </div>
+
+                </dl>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="bg-gray-50">
+        <div class="max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:py-24 lg:px-8 lg:grid lg:grid-cols-3 lg:gap-x-8">
+            <div>
+                <h2 class="text-base font-semibold text-indigo-600 uppercase tracking-wide">Ship Faster</h2>
+                <p class="mt-2 text-3xl font-extrabold text-gray-900">Time to Market</p>
+                <p class="mt-4 text-lg text-gray-500">Deliver today, and migrate to a new threat model tomorrow.</p>
+            </div>
+            <div class="mt-12 lg:mt-0 lg:col-span-2">
+                <dl
+                        class="space-y-10 sm:space-y-0 sm:grid sm:grid-cols-2 sm:grid-rows-2 sm:grid-flow-col sm:gap-x-6 sm:gap-y-10 lg:gap-x-8">
+                    <div class="flex">
+                        <!-- Heroicon name: check -->
+                        <svg class="flex-shrink-0 h-6 w-6 text-green-500" xmlns="http://www.w3.org/2000/svg"
+                             fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                  d="M5 13l4 4L19 7"/>
+                        </svg>
+                        <div class="ml-3">
+                            <dt class="text-lg leading-6 font-medium text-gray-900">
+                                Simple and Consistent Interface
+                            </dt>
+                        </div>
+                    </div>
+
+
+                    <div class="flex">
+                        <!-- Heroicon name: check -->
+                        <svg class="flex-shrink-0 h-6 w-6 text-green-500" xmlns="http://www.w3.org/2000/svg"
+                             fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                  d="M5 13l4 4L19 7"/>
+                        </svg>
+                        <div class="ml-3">
+                            <dt class="text-lg leading-6 font-medium text-gray-900">
+                                End the debates: every customer chose their own threat model
+                            </dt>
+                        </div>
+                    </div>
+
+                    <div class="flex">
+                        <!-- Heroicon name: check -->
+                        <svg class="flex-shrink-0 h-6 w-6 text-green-500" xmlns="http://www.w3.org/2000/svg"
+                             fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                  d="M5 13l4 4L19 7"/>
+                        </svg>
+                        <div class="ml-3">
+                            <dt class="text-lg leading-6 font-medium text-gray-900">
+                                Integrate and ship secure software today
+                            </dt>
+                        </div>
+                    </div>
+
+                    <div class="flex">
+                        <!-- Heroicon name: check -->
+                        <svg class="flex-shrink-0 h-6 w-6 text-green-500" xmlns="http://www.w3.org/2000/svg"
+                             fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                  d="M5 13l4 4L19 7"/>
+                        </svg>
+                        <div class="ml-3">
+                            <dt class="text-lg leading-6 font-medium text-gray-900">
+                                Secure by default
+                            </dt>
+                        </div>
+                    </div>
+
+                </dl>
+            </div>
+        </div>
+    </div>
+
+    <!-- Everywhere blocl       -->
+    <div class="bg-white">
+        <div class="max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:py-24 lg:px-8 lg:grid lg:grid-cols-3 lg:gap-x-8">
+            <div>
+                <h2 class="text-base font-semibold text-indigo-600 uppercase tracking-wide">Consistent</h2>
+                <p class="mt-2 text-3xl font-extrabold text-gray-900">End-to-end Encryption SDKs</p>
+                <p class="mt-4 text-lg text-gray-500">Peacemakr&rsquo;s Secure Data SDK's solve all the hard problems, so that you can focus on your value-add.</p>
+            </div>
+            <div class="mt-12 lg:mt-0 lg:col-span-2">
+                <dl
+                        class="space-y-10 sm:space-y-0 sm:grid sm:grid-cols-2 sm:grid-rows-4 sm:grid-flow-col sm:gap-x-6 sm:gap-y-10 lg:gap-x-8">
+                    <div class="flex">
+                        <!-- Heroicon name: check -->
+                        <svg class="flex-shrink-0 h-6 w-6 text-green-500" xmlns="http://www.w3.org/2000/svg"
+                             fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                  d="M5 13l4 4L19 7"/>
+                        </svg>
+                        <div class="ml-3">
+                            <dt class="text-lg leading-6 font-medium text-gray-900">
+                                <a href="https://github.com/peacemakr-io/peacemakr-python-sdk">Secure Data Python SDK</a>
+                            </dt>
+                        </div>
+                    </div>
+
+                    <div class="flex">
+                        <!-- Heroicon name: check -->
+                        <svg class="flex-shrink-0 h-6 w-6 text-green-500" xmlns="http://www.w3.org/2000/svg"
+                             fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                  d="M5 13l4 4L19 7"/>
+                        </svg>
+                        <div class="ml-3">
+                            <dt class="text-lg leading-6 font-medium text-gray-900">
+                                <a href="https://github.com/peacemakr-io/peacemakr-java-sdk">Secure Data Java SDK</a>
+                            </dt>
+                        </div>
+                    </div>
+
+                    <div class="flex">
+                        <!-- Heroicon name: check -->
+                        <svg class="flex-shrink-0 h-6 w-6 text-green-500" xmlns="http://www.w3.org/2000/svg"
+                             fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                  d="M5 13l4 4L19 7"/>
+                        </svg>
+                        <div class="ml-3">
+                            <dt class="text-lg leading-6 font-medium text-gray-900">
+                                <a href="https://github.com/peacemakr-io/peacemakr-go-sdk">Secure Data Go SDK</a>
+                            </dt>
+                        </div>
+                    </div>
+
+
+                    <div class="flex">
+                        <!-- Heroicon name: check -->
+                        <svg class="flex-shrink-0 h-6 w-6 text-green-500" xmlns="http://www.w3.org/2000/svg"
+                             fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                  d="M5 13l4 4L19 7"/>
+                        </svg>
+                        <div class="ml-3">
+                            <dt class="text-lg leading-6 font-medium text-gray-900">
+                                <a href="https://github.com/peacemakr-io/peacemakr-ios-sdk">Secure Data iOS SDK</a>
+                            </dt>
+                        </div>
+                    </div>
+
+                    <div class="flex">
+                        <!-- Heroicon name: check -->
+                        <svg class="flex-shrink-0 h-6 w-6 text-green-500" xmlns="http://www.w3.org/2000/svg"
+                             fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                  d="M5 13l4 4L19 7"/>
+                        </svg>
+                        <div class="ml-3">
+                            <dt class="text-lg leading-6 font-medium text-gray-900">
+                                <a href="https://github.com/peacemakr-io/peacemakr-android-sdk">Secure Data Android SDK</a>
+                            </dt>
+                        </div>
+                    </div>
+
+                    <div class="flex">
+                        <!-- Heroicon name: check -->
+                        <svg class="flex-shrink-0 h-6 w-6 text-green-500" xmlns="http://www.w3.org/2000/svg"
+                             fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                  d="M5 13l4 4L19 7"/>
+                        </svg>
+                        <div class="ml-3">
+                            <dt class="text-lg leading-6 font-medium text-gray-900">
+                                <a href="https://github.com/peacemakr-io/peacemakr-nodejs-sdk">Secure Data NodeJS SDK</a>
+                            </dt>
+                        </div>
+                    </div>
+
+                    <div class="flex">
+                        <!-- Heroicon name: check -->
+                        <svg class="flex-shrink-0 h-6 w-6 text-gray-500" xmlns="http://www.w3.org/2000/svg"
+                             fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                  d="M5 13l4 4L19 7"/>
+                        </svg>
+                        <div class="ml-3">
+                            <dt class="text-lg leading-6 font-medium text-gray-900">
+                                Secure Data
+                                <p>
+                                    JavaScript SDK (Coming Soon)
+                                </p>
+                            </dt>
+                        </div>
+                    </div>
+
+                </dl>
+            </div>
+        </div>
+    </div>
+
+    <!-- Compliance block-->
+    <div class="bg-gray-50">
+        <div class="max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:py-24 lg:px-8 lg:grid lg:grid-cols-3 lg:gap-x-8">
+            <div>
+                <h2 class="text-base font-semibold text-indigo-600 uppercase tracking-wide">Easy</h2>
+                <p class="mt-2 text-3xl font-extrabold text-gray-900">Compliance</p>
+                <p class="mt-4 text-lg text-gray-500">Peacemakr removes sales barriers in regulated verticals.</p>
+            </div>
+            <div class="mt-12 lg:mt-0 lg:col-span-2">
+                <dl
+                        class="space-y-10 sm:space-y-0 sm:grid sm:grid-cols-2 sm:grid-rows-3 sm:grid-flow-col sm:gap-x-6 sm:gap-y-10 lg:gap-x-8">
+                    <div class="flex">
+                        <!-- Heroicon name: check -->
+                        <svg class="flex-shrink-0 h-6 w-6 text-green-500" xmlns="http://www.w3.org/2000/svg"
+                             fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                  d="M5 13l4 4L19 7"/>
+                        </svg>
+                        <div class="ml-3">
+                            <dt class="text-lg leading-6 font-medium text-gray-900">GDPR (General Data Protection Regulation)
+                            </dt>
+                        </div>
+                    </div>
+
+                    <div class="flex">
+                        <!-- Heroicon name: check -->
+                        <svg class="flex-shrink-0 h-6 w-6 text-green-500" xmlns="http://www.w3.org/2000/svg"
+                             fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                  d="M5 13l4 4L19 7"/>
+                        </svg>
+                        <div class="ml-3">
+                            <dt class="text-lg leading-6 font-medium text-gray-900">
+                                CCPA (California Consumer Privacy Act)
+                            </dt>
+                        </div>
+                    </div>
+
+                    <div class="flex">
+                        <!-- Heroicon name: check -->
+                        <svg class="flex-shrink-0 h-6 w-6 text-green-500" xmlns="http://www.w3.org/2000/svg"
+                             fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                  d="M5 13l4 4L19 7"/>
+                        </svg>
+                        <div class="ml-3">
+                            <dt class="text-lg leading-6 font-medium text-gray-900">
+                                HIPAA (Health Insurance Portability and Accountability Act)
+                            </dt>
+                        </div>
+                    </div>
+
+
+                    <div class="flex">
+                        <!-- Heroicon name: check -->
+                        <svg class="flex-shrink-0 h-6 w-6 text-green-500" xmlns="http://www.w3.org/2000/svg"
+                             fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                  d="M5 13l4 4L19 7"/>
+                        </svg>
+                        <div class="ml-3">
+                            <dt class="text-lg leading-6 font-medium text-gray-900">
+                                PCI DSS (Payment Card Industry Data Security Standard)
+                            </dt>
+                        </div>
+                    </div>
+
+                    <div class="flex">
+                        <!-- Heroicon name: check -->
+                        <svg class="flex-shrink-0 h-6 w-6 text-gray-500" xmlns="http://www.w3.org/2000/svg"
+                             fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                  d="M5 13l4 4L19 7"/>
+                        </svg>
+                        <div class="ml-3">
+                            <dt class="text-lg leading-6 font-medium text-gray-900">
+                                FedRAMP (Coming Soon)
+                            </dt>
+                        </div>
+                    </div>
+
+                    <div class="flex">
+                        <!-- Heroicon name: check -->
+                        <svg class="flex-shrink-0 h-6 w-6 text-gray-500" xmlns="http://www.w3.org/2000/svg"
+                             fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                  d="M5 13l4 4L19 7"/>
+                        </svg>
+                        <div class="ml-3">
+                            <dt class="text-lg leading-6 font-medium text-gray-900">
+                                FIPS 140-2 (Coming Soon)
+                            </dt>
+                        </div>
+                    </div>
+
+                </dl>
+            </div>
+        </div>
+    </div>
+
+    <!-- Secure block -->
+    <div class="relative bg-white py-16 sm:py-24 lg:py-32 overflow-hidden">
+        <div class="mx-auto max-w-md px-4 text-center sm:max-w-3xl sm:px-6 lg:px-8 lg:max-w-7xl">
+            <h2 class="text-base font-semibold tracking-wider text-indigo-600 uppercase">Connected</h2>
+            <p class="mt-2 text-3xl font-extrabold text-gray-900 tracking-tight sm:text-4xl">
+                Secure Collaborations
+            </p>
+            <p class="mt-5 max-w-prose mx-auto text-xl text-gray-500">
+                Securely share protected data with authorized participants.
+            </p>
+        </div>
+    </div>
+
+    <!-- At scale block -->
+    <div class="relative bg-gray-50 py-16 sm:py-24 lg:py-32">
+        <div class="mx-auto max-w-md px-4 text-center sm:max-w-3xl sm:px-6 lg:px-8 lg:max-w-7xl">
+            <h2 class="text-base font-semibold tracking-wider text-indigo-600 uppercase">Effective</h2>
+            <p class="mt-2 text-3xl font-extrabold text-gray-900 tracking-tight sm:text-4xl">
+                At Scale
+            </p>
+            <p class="mt-5 max-w-prose mx-auto text-xl text-gray-500">
+                Peacemakr scales with you so that you do not waste time supporting and scaling secure data infrastructure.
+            </p>
+        </div>
+    </div>
+    
+    <!-- Pricing block -->
+    <div class="bg-gray-900">
+        <div class="pt-12 sm:pt-16 lg:pt-24">
+            <div class="max-w-7xl mx-auto text-center px-4 sm:px-6 lg:px-8">
+                <div class="max-w-3xl mx-auto space-y-2 lg:max-w-none">
+                    <h2 class="text-lg leading-6 font-semibold text-gray-300 uppercase tracking-wider">
+                        Pricing
+                    </h2>
+                    <p class="text-3xl font-extrabold text-white sm:text-4xl lg:text-5xl">
+                        Available plans
+                    </p>
+                    <p class="text-xl text-gray-300">
+                        To learn more contact us
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="mt-8 pb-12 bg-gray-50 sm:mt-12 sm:pb-16 lg:mt-16 lg:pb-24">
+            <div class="relative">
+                <div class="absolute inset-0 h-3/4 bg-gray-900"></div>
+                <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <div
+                            class="max-w-md mx-auto space-y-4 lg:max-w-5xl lg:grid lg:grid-cols-2 lg:gap-5 lg:space-y-0">
+                        <div class="flex flex-col rounded-lg shadow-lg overflow-hidden">
+                            <div class="px-6 py-8 bg-white sm:p-10 sm:pb-6">
+                                <div>
+                                    <h3 class="inline-flex px-4 py-1 rounded-full text-sm font-semibold tracking-wide uppercase bg-indigo-100 text-indigo-600"
+                                        id="tier-standard">
+                                        Basic
+                                    </h3>
+                                </div>
+                                <p class="mt-5 text-lg text-gray-500">
+                                    Perfect for POCs and small size businesses
+                                </p>
+                            </div>
+                            <div
+                                    class="flex-1 flex flex-col justify-between px-6 pt-6 pb-8 bg-gray-50 space-y-6 sm:p-10 sm:pt-6">
+                                <ul class="space-y-4">
+                                   
+                                    <li class="flex items-start">
+                                        <div class="flex-shrink-0">
+                                            <!-- Heroicon name: check -->
+                                            <svg class="h-6 w-6 text-green-500" xmlns="http://www.w3.org/2000/svg"
+                                                 fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                                                 aria-hidden="true">
+                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                      stroke-width="2" d="M5 13l4 4L19 7"/>
+                                            </svg>
+                                        </div>
+                                        <p class="ml-3 text-base text-gray-700">
+                                            Admin Control Panel
+                                        </p>
+                                    </li>
+
+                                    <li class="flex items-start">
+                                        <div class="flex-shrink-0">
+                                            <!-- Heroicon name: check -->
+                                            <svg class="h-6 w-6 text-green-500" xmlns="http://www.w3.org/2000/svg"
+                                                 fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                                                 aria-hidden="true">
+                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                      stroke-width="2" d="M5 13l4 4L19 7"/>
+                                            </svg>
+                                        </div>
+                                        <p class="ml-3 text-base text-gray-700">
+                                            Unlimited Integrations
+                                        </p>
+                                    </li>
+
+                                    <li class="flex items-start">
+                                        <div class="flex-shrink-0">
+                                            <!-- Heroicon name: check -->
+                                            <svg class="h-6 w-6 text-green-500" xmlns="http://www.w3.org/2000/svg"
+                                                 fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                                                 aria-hidden="true">
+                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                      stroke-width="2" d="M5 13l4 4L19 7"/>
+                                            </svg>
+                                        </div>
+                                        <p class="ml-3 text-base text-gray-700">
+                                            500 API calls / month
+                                        </p>
+                                    </li>
+
+                                    <li class="flex items-start">
+                                        <div class="flex-shrink-0">
+                                            <!-- Heroicon name: check -->
+                                            <svg class="h-6 w-6 text-green-500" xmlns="http://www.w3.org/2000/svg"
+                                                 fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                                                 aria-hidden="true">
+                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                      stroke-width="2" d="M5 13l4 4L19 7"/>
+                                            </svg>
+                                        </div>
+                                        <p class="ml-3 text-base text-gray-700">
+                                            FAQ Bronze Support
+                                        </p>
+                                    </li>
+                                     <li class="flex items-start">
+                                        <div class="flex-shrink-0">
+                                            <!-- Heroicon name: check -->
+                                            <svg class="h-6 w-6 text-green-500" xmlns="http://www.w3.org/2000/svg"
+                                                 fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                                                 aria-hidden="true">
+                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                      stroke-width="2" d="M5 13l4 4L19 7"/>
+                                            </svg>
+                                        </div>
+                                        <p class="ml-3 text-base text-gray-700">
+                                            99.50% guaranteed uptime SLA
+                                        </p>
+                                    </li>
+                                    
+                                </ul>
+                                <div class="rounded-md shadow">
+                                    <a href="#"
+                                       class="flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700"
+                                       onclick="location.href='https://admin.peacemakr.io'"
+                                       aria-describedby="tier-standard">
+                                        Sign Up for Free
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="flex flex-col rounded-lg shadow-lg overflow-hidden">
+                            <div class="px-6 py-8 bg-white sm:p-10 sm:pb-6">
+                                <div>
+                                    <h3 class="inline-flex px-4 py-1 rounded-full text-sm font-semibold tracking-wide uppercase bg-indigo-100 text-indigo-600"
+                                        id="tier-standard">
+                                        STANDARD
+                                    </h3> 
+                                </div>
+                                <p class="mt-5 text-lg text-gray-500">
+                                    Perfect for medium size businesses
+                                </p>
+                            </div>
+                            <div
+                                    class="flex-1 flex flex-col justify-between px-6 pt-6 pb-8 bg-gray-50 space-y-6 sm:p-10 sm:pt-6">
+                                <ul class="space-y-4">
+                                   
+                                    <li class="flex items-start">
+                                        <div class="flex-shrink-0">
+                                            <!-- Heroicon name: check -->
+                                            <svg class="h-6 w-6 text-green-500" xmlns="http://www.w3.org/2000/svg"
+                                                 fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                                                 aria-hidden="true">
+                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                      stroke-width="2" d="M5 13l4 4L19 7"/>
+                                            </svg>
+                                        </div>
+                                        <p class="ml-3 text-base text-gray-700">
+                                            All Basic features included
+                                        </p>
+                                    </li>
+
+                                    <li class="flex items-start">
+                                        <div class="flex-shrink-0">
+                                            <!-- Heroicon name: check -->
+                                            <svg class="h-6 w-6 text-green-500" xmlns="http://www.w3.org/2000/svg"
+                                                 fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                                                 aria-hidden="true">
+                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                      stroke-width="2" d="M5 13l4 4L19 7"/>
+                                            </svg>
+                                        </div>
+                                        <p class="ml-3 text-base text-gray-700">
+                                            Key derivers available
+                                        </p>
+                                    </li>
+
+                                    <li class="flex items-start">
+                                        <div class="flex-shrink-0">
+                                            <!-- Heroicon name: check -->
+                                            <svg class="h-6 w-6 text-green-500" xmlns="http://www.w3.org/2000/svg"
+                                                 fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                                                 aria-hidden="true">
+                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                      stroke-width="2" d="M5 13l4 4L19 7"/>
+                                            </svg>
+                                        </div>
+                                        <p class="ml-3 text-base text-gray-700">
+                                            25,500 API calls / month
+                                        </p>
+                                    </li>
+
+                                    <li class="flex items-start">
+                                        <div class="flex-shrink-0">
+                                            <!-- Heroicon name: check -->
+                                            <svg class="h-6 w-6 text-green-500" xmlns="http://www.w3.org/2000/svg"
+                                                 fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                                                 aria-hidden="true">
+                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                      stroke-width="2" d="M5 13l4 4L19 7"/>
+                                            </svg>
+                                        </div>
+                                        <p class="ml-3 text-base text-gray-700">
+                                            Email Silver Support
+                                        </p>
+                                    </li>
+                                     <li class="flex items-start">
+                                        <div class="flex-shrink-0">
+                                            <!-- Heroicon name: check -->
+                                            <svg class="h-6 w-6 text-green-500" xmlns="http://www.w3.org/2000/svg"
+                                                 fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                                                 aria-hidden="true">
+                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                      stroke-width="2" d="M5 13l4 4L19 7"/>
+                                            </svg>
+                                        </div>
+                                        <p class="ml-3 text-base text-gray-700">
+                                            99.90% guaranteed uptime SLA
+                                        </p>
+                                    </li>
+                                    
+                                </ul>
+                                <div class="rounded-md shadow">
+                                    <a href="#"
+                                       class="flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700"
+                                       onclick="location.href='https://admin.peacemakr.io'"
+                                       aria-describedby="tier-standard">
+                                        Sign Up for $499 per Month
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex flex-col rounded-lg shadow-lg overflow-hidden">
+                            <div class="px-6 py-8 bg-white sm:p-10 sm:pb-6">
+                                <div>
+                                    <h3 class="inline-flex px-4 py-1 rounded-full text-sm font-semibold tracking-wide uppercase bg-indigo-100 text-indigo-600"
+                                        id="tier-standard">
+                                        Plus
+                                    </h3>
+                                </div>
+                                <p class="mt-5 text-lg text-gray-500">
+                                    Perfect for large size businesses
+                                </p>
+                            </div>
+                            <div
+                                    class="flex-1 flex flex-col justify-between px-6 pt-6 pb-8 bg-gray-50 space-y-6 sm:p-10 sm:pt-6">
+                                <ul class="space-y-4">
+                                   
+                                    <li class="flex items-start">
+                                        <div class="flex-shrink-0">
+                                            <!-- Heroicon name: check -->
+                                            <svg class="h-6 w-6 text-green-500" xmlns="http://www.w3.org/2000/svg"
+                                                 fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                                                 aria-hidden="true">
+                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                      stroke-width="2" d="M5 13l4 4L19 7"/>
+                                            </svg>
+                                        </div>
+                                        <p class="ml-3 text-base text-gray-700">
+                                            All Standard features included
+                                        </p>
+                                    </li>
+
+                                    <li class="flex items-start">
+                                        <div class="flex-shrink-0">
+                                            <!-- Heroicon name: check -->
+                                            <svg class="h-6 w-6 text-green-500" xmlns="http://www.w3.org/2000/svg"
+                                                 fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                                                 aria-hidden="true">
+                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                      stroke-width="2" d="M5 13l4 4L19 7"/>
+                                            </svg>
+                                        </div>
+                                        <p class="ml-3 text-base text-gray-700">
+                                            Collaboraton available
+                                        </p>
+                                    </li>
+
+                                    <li class="flex items-start">
+                                        <div class="flex-shrink-0">
+                                            <!-- Heroicon name: check -->
+                                            <svg class="h-6 w-6 text-green-500" xmlns="http://www.w3.org/2000/svg"
+                                                 fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                                                 aria-hidden="true">
+                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                      stroke-width="2" d="M5 13l4 4L19 7"/>
+                                            </svg>
+                                        </div>
+                                        <p class="ml-3 text-base text-gray-700">
+                                            250,000 API calls / month
+                                        </p>
+                                    </li>
+
+                                    <li class="flex items-start">
+                                        <div class="flex-shrink-0">
+                                            <!-- Heroicon name: check -->
+                                            <svg class="h-6 w-6 text-green-500" xmlns="http://www.w3.org/2000/svg"
+                                                 fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                                                 aria-hidden="true">
+                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                      stroke-width="2" d="M5 13l4 4L19 7"/>
+                                            </svg>
+                                        </div>
+                                        <p class="ml-3 text-base text-gray-700">
+                                            Email & phone Gold Support
+                                        </p>
+                                    </li>
+                                     <li class="flex items-start">
+                                        <div class="flex-shrink-0">
+                                            <!-- Heroicon name: check -->
+                                            <svg class="h-6 w-6 text-green-500" xmlns="http://www.w3.org/2000/svg"
+                                                 fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                                                 aria-hidden="true">
+                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                      stroke-width="2" d="M5 13l4 4L19 7"/>
+                                            </svg>
+                                        </div>
+                                        <p class="ml-3 text-base text-gray-700">
+                                            99.95% guaranteed uptime SLA
+                                        </p>
+                                    </li>
+                                    
+                                </ul>
+                                <div class="rounded-md shadow">
+                                    <a href="#"
+                                       class="flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700"
+                                       onclick="location.href='https://admin.peacemakr.io'"
+                                       aria-describedby="tier-standard">
+                                        Sign Up for $4,999 per Month
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex flex-col rounded-lg shadow-lg overflow-hidden">
+                            <div class="px-6 py-8 bg-white sm:p-10 sm:pb-6">
+                                <div>
+                                    <h3 class="inline-flex px-4 py-1 rounded-full text-sm font-semibold tracking-wide uppercase bg-indigo-100 text-indigo-600"
+                                        id="tier-standard">
+                                        Enterprise
+                                    </h3>
+                                </div>
+                                <p class="mt-5 text-lg text-gray-500">
+                                    Perfect for very large size businesses
+                                </p>
+                            </div>
+                            <div
+                                    class="flex-1 flex flex-col justify-between px-6 pt-6 pb-8 bg-gray-50 space-y-6 sm:p-10 sm:pt-6">
+                                <ul class="space-y-4">
+                                    <li class="flex items-start">
+                                        <div class="flex-shrink-0">
+                                            <!-- Heroicon name: check -->
+                                            <svg class="h-6 w-6 text-green-500" xmlns="http://www.w3.org/2000/svg"
+                                                 fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                                                 aria-hidden="true">
+                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                      stroke-width="2" d="M5 13l4 4L19 7"/>
+                                            </svg>
+                                        </div>
+                                        <p class="ml-3 text-base text-gray-700">
+                                            All Plus Features included
+                                        </p>
+                                    </li>
+
+                                    <li class="flex items-start">
+                                        <div class="flex-shrink-0">
+                                            <!-- Heroicon name: check -->
+                                            <svg class="h-6 w-6 text-green-500" xmlns="http://www.w3.org/2000/svg"
+                                                 fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                                                 aria-hidden="true">
+                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                      stroke-width="2" d="M5 13l4 4L19 7"/>
+                                            </svg>
+                                        </div>
+                                        <p class="ml-3 text-base text-gray-700">
+                                            Zero-trust collaboraton
+                                        </p>
+                                    </li>
+
+                                   
+                                    <li class="flex items-start">
+                                        <div class="flex-shrink-0">
+                                            <!-- Heroicon name: check -->
+                                            <svg class="h-6 w-6 text-green-500" xmlns="http://www.w3.org/2000/svg"
+                                                 fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                                                 aria-hidden="true">
+                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                      stroke-width="2" d="M5 13l4 4L19 7"/>
+                                            </svg>
+                                        </div>
+                                        <p class="ml-3 text-base text-gray-700">
+                                            1,000,000 API calls / month
+                                        </p>
+                                    </li>
+
+                                    <li class="flex items-start">
+                                        <div class="flex-shrink-0">
+                                            <!-- Heroicon name: check -->
+                                            <svg class="h-6 w-6 text-green-500" xmlns="http://www.w3.org/2000/svg"
+                                                 fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                                                 aria-hidden="true">
+                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                      stroke-width="2" d="M5 13l4 4L19 7"/>
+                                            </svg>
+                                        </div>
+                                        <p class="ml-3 text-base text-gray-700">
+                                            Email & phone Platinum Support
+                                        </p>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <div class="flex-shrink-0">
+                                            <!-- Heroicon name: check -->
+                                            <svg class="h-6 w-6 text-green-500" xmlns="http://www.w3.org/2000/svg"
+                                                 fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                                                 aria-hidden="true">
+                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                      stroke-width="2" d="M5 13l4 4L19 7"/>
+                                            </svg>
+                                        </div>
+                                        <p class="ml-3 text-base text-gray-700">
+                                            99.99% guaranteed uptime SLA
+                                        </p>
+                                    </li>
+
+                                </ul>
+                                <div class="rounded-md shadow">
+                                    <a href="#"
+                                       class="flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700"
+                                       onclick="location.href='https://admin.peacemakr.io'"
+                                       aria-describedby="tier-standard">
+                                        Sign Up for $99,999 per Month
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-
+</main>
+
+<footer class="bg-gray-900">
+    <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 md:flex md:items-center md:justify-between lg:px-8">
+        <div class="flex justify-center space-x-6 md:order-2">
+            <a href="https://www.linkedin.com/company/peacemakr-io" target="_blank"
+               class="text-gray-400 hover:text-gray-500">
+                <span class="sr-only">Linked</span>
+                <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 65 65" aria-hidden="true">
+                    <path fill-rule="evenodd"
+                          d="M50.837,48.137V36.425c0-6.275-3.35-9.195-7.816-9.195  c-3.604,0-5.219,1.983-6.119,3.374V27.71h-6.79c0.09,1.917,0,20.427,0,20.427h6.79V36.729c0-0.609,0.044-1.219,0.224-1.655  c0.49-1.22,1.607-2.483,3.482-2.483c2.458,0,3.44,1.873,3.44,4.618v10.929H50.837z M22.959,24.922c2.367,0,3.842-1.57,3.842-3.531  c-0.044-2.003-1.475-3.528-3.797-3.528s-3.841,1.524-3.841,3.528c0,1.961,1.474,3.531,3.753,3.531H22.959z M34,64  C17.432,64,4,50.568,4,34C4,17.431,17.432,4,34,4s30,13.431,30,30C64,50.568,50.568,64,34,64z M26.354,48.137V27.71h-6.789v20.427  H26.354z"
+                          clip-rule="evenodd"/>
+                </svg>
+            </a>
+
+            <a href="https://twitter.com/peacemakr4" target="_blank" class="text-gray-400 hover:text-gray-500">
+                <span class="sr-only">Twitter</span>
+                <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                    <path
+                            d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84"/>
+                </svg>
+            </a>
+
+            <a href="https://github.com/peacemakr-io" target="_blank" class="text-gray-400 hover:text-gray-500">
+                <span class="sr-only">GitHub</span>
+                <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                    <path fill-rule="evenodd"
+                          d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"
+                          clip-rule="evenodd"/>
+                </svg>
+            </a>
+        </div>
+        <div class="mt-8 md:mt-0 md:order-1">
+            <p class="text-center text-base text-gray-400">
+                &copy; 2021 Peacemakr.io All rights reserved.
+            </p>
+        </div>
+    </div>
+</footer>
+
+<script src="index.js"></script>
+</body>
+
+</html>
