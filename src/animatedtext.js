@@ -65,7 +65,7 @@ var TxtType = function(el, toRotate, period) {
         this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
 
         var that = this;
-        var delta = 50 - Math.random() * 50;
+        var delta = 25;
 
         if (this.isDeleting) { delta /= 2; }
 
