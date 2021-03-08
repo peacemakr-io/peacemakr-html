@@ -220,14 +220,19 @@
                     <span class="block text-indigo-600">Go ahead, try it out:</span>
                 </h2>
             </div>
-            <div class="box-border h-50 w-300 p-4 border-4 lg:col-span-2">
-                  <span class="rounded-sm font-mono text-indigo-900">
-                    brew tap peacemakr-io/peacemakr
+            <div class="p-4 rounded-lg bg-gray-700 lg:col-span-2">
+                  <span class="rounded-sm font-mono text-indigo-100">
+                    # Install peacemakr
                     <br>
                     brew install peacemakr-cli
                     <br>
                     <br>
+                    # Authenticate
+                    <br>
                     export PEACEMAKR_APIKEY=d1Maw58P2xCQ8d0GV15n22SQNI6lYXHzWLCTEvNPHnY=
+                    <br>
+                    <br>
+                    # Encrypt
                     <br>
                     echo "Hello Secure World" | peacemakr -encrypt
                 </span>
@@ -241,8 +246,7 @@
                     // dummy.style.display = 'none'
                     document.body.appendChild(dummy);
                     //Be careful if you use texarea. setAttribute('value', value), which works with "input" does not work with "textarea". – Eduard
-                    dummy.value = `brew tap peacemakr-io/peacemakr
-brew install peacemakr-cli
+                    dummy.value = `brew install peacemakr-cli
 export PEACEMAKR_APIKEY=d1Maw58P2xCQ8d0GV15n22SQNI6lYXHzWLCTEvNPHnY=
 echo "Hello Secure World" | peacemakr -encrypt`;
                         dummy.select();
@@ -250,7 +254,7 @@ echo "Hello Secure World" | peacemakr -encrypt`;
                         document.body.removeChild(dummy);
                     }
                 </script>
-                <div class="text-right col-span-3">
+                <div class="text-right col-span-3 text-gray-800">
                     <a href="#" onclick="copyToClipboard(); return false;">
                         Copy
                         <svg class="w-6 h-6 float-right" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -266,7 +270,7 @@ echo "Hello Secure World" | peacemakr -encrypt`;
   <div class="mx-auto py-12 px-4 max-w-7xl sm:px-6 lg:px-8 lg:py-24">
     <div class="space-y-12 lg:grid lg:grid-cols-3 lg:gap-8 lg:space-y-0">
       <div class="space-y-5 sm:space-y-4">
-        <h2 class="text-3xl font-extrabold tracking-tight sm:text-4xl">Meet Your New Security Control Panel</h2>
+        <h2 class="text-3xl font-extrabold tracking-tight sm:text-4xl">Meet Your New <p class="text-indigo-600">Security Control Panel</p></h2>
         <p class="text-xl text-gray-500">One of the reasons data security is difficult, is because we tend to ship hard-coded algorithms, key lengths, modes of operations, and other configurations. With Peacemakr, all security configurations are centrally managed and control behind a single pane of glass.</p>
       </div>
       <div class="lg:col-span-2">
