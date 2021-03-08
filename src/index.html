@@ -214,55 +214,57 @@
 
     <!-- CTA 2 -->
     <div class="bg-white">
-        <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8 grid lg:grid-cols-3 lg:gap-x-8">
-            <div class="self-center">
-                <h2 class="font-extrabold text-center text-gray-900 sm:text-4xl">
-                    <span class="block text-indigo-600">Go ahead, try it out:</span>
-                </h2>
-            </div>
-            <div class="p-4 rounded-lg bg-gray-700 lg:col-span-2">
-                  <span class="rounded-sm font-mono text-indigo-100">
-                    # Install peacemakr
-                    <br>
-                    brew install peacemakr-cli
-                    <br>
-                    <br>
-                    # Authenticate
-                    <br>
-                    export PEACEMAKR_APIKEY=d1Maw58P2xCQ8d0GV15n22SQNI6lYXHzWLCTEvNPHnY=
-                    <br>
-                    <br>
-                    # Encrypt
-                    <br>
-                    echo "Hello Secure World" | peacemakr -encrypt
-                </span>
+        <div class="mx-auto py-12 px-4 max-w-7xl sm:px-6 lg:px-8 lg:py-24 ">
+            <div class="space-y-12 lg:grid lg:grid-cols-3 lg:gap-8 lg:space-y-0">
+                <div class="self-center">
+                    <h2 class="font-extrabold text-center text-gray-900 sm:text-4xl">
+                        <span class="block text-indigo-600">Go ahead, try it out:</span>
+                    </h2>
                 </div>
+                <div class="p-4 rounded-lg bg-gray-700 lg:col-span-2">
+                      <span class="rounded-sm font-mono text-indigo-100">
+                        # Install peacemakr
+                        <br>
+                        brew install peacemakr-cli
+                        <br>
+                        <br>
+                        # Authenticate
+                        <br>
+                        export PEACEMAKR_APIKEY=d1Maw58P2xCQ8d0GV15n22SQNI6lYXHzWLCTEvNPHnY=
+                        <br>
+                        <br>
+                        # Encrypt
+                        <br>
+                        echo "Hello Secure World" | peacemakr -encrypt
+                    </span>
+                    </div>
 
-                <script language="javascript">
-                    function copyToClipboard() {
-                    var dummy = document.createElement("textarea");
-                    // to avoid breaking orgain page when copying more words
-                    // cant copy when adding below this code
-                    // dummy.style.display = 'none'
-                    document.body.appendChild(dummy);
-                    //Be careful if you use texarea. setAttribute('value', value), which works with "input" does not work with "textarea". – Eduard
-                    dummy.value = `brew install peacemakr-cli
-export PEACEMAKR_APIKEY=d1Maw58P2xCQ8d0GV15n22SQNI6lYXHzWLCTEvNPHnY=
-echo "Hello Secure World" | peacemakr -encrypt`;
-                        dummy.select();
-                        document.execCommand("copy");
-                        document.body.removeChild(dummy);
-                    }
-                </script>
-                <div class="text-right col-span-3 text-gray-800">
-                    <a href="#" onclick="copyToClipboard(); return false;">
-                        Copy
-                        <svg class="w-6 h-6 float-right" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 5H6a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2v-1M8 5a2 2 0 002 2h2a2 2 0 002-2M8 5a2 2 0 012-2h2a2 2 0 012 2m0 0h2a2 2 0 012 2v3m2 4H10m0 0l3-3m-3 3l3 3" />
-                        </svg>
-                    </a>
+                    <script language="javascript">
+                        function copyToClipboard() {
+                        var dummy = document.createElement("textarea");
+                        // to avoid breaking orgain page when copying more words
+                        // cant copy when adding below this code
+                        // dummy.style.display = 'none'
+                        document.body.appendChild(dummy);
+                        //Be careful if you use texarea. setAttribute('value', value), which works with "input" does not work with "textarea". – Eduard
+                        dummy.value = `brew install peacemakr-cli
+    export PEACEMAKR_APIKEY=d1Maw58P2xCQ8d0GV15n22SQNI6lYXHzWLCTEvNPHnY=
+    echo "Hello Secure World" | peacemakr -encrypt`;
+                            dummy.select();
+                            document.execCommand("copy");
+                            document.body.removeChild(dummy);
+                        }
+                    </script>
+                    <div class="text-right col-span-3 text-gray-800">
+                        <a href="#" onclick="copyToClipboard(); return false;">
+                            Copy
+                            <svg class="w-6 h-6 float-right" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 5H6a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2v-1M8 5a2 2 0 002 2h2a2 2 0 002-2M8 5a2 2 0 012-2h2a2 2 0 012 2m0 0h2a2 2 0 012 2v3m2 4H10m0 0l3-3m-3 3l3 3" />
+                            </svg>
+                        </a>
+                    </div>
                 </div>
-    </div>
+            </div>
 
     <!-- CONTROL PANEL SCREEN SHOTS -->
 
