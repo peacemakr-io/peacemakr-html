@@ -108,7 +108,7 @@
         To: "opacity-0 scale-95"
     -->
 
-            <div id="menu" class="absolute top-0 inset-x-0 p-2 transition transform origin-top-right hidden">
+            <div id="menu" class="z-50 absolute top-0 inset-x-0 p-2 transition transform origin-top-right hidden">
                 <div class="rounded-lg shadow-md bg-white ring-1 ring-black ring-opacity-5 overflow-hidden">
                     <div class="px-5 pt-4 flex items-center justify-between">
                         <div>
@@ -225,10 +225,12 @@
                       <span class="rounded-sm font-mono text-indigo-100">
                         # Install peacemakr
                         <br>
-                        brew install peacemakr-cli
+                        brew tap peacemakr-io/peacemakr 
+                        <br>
+                        brew install peacemakr
                         <br>
                         <br>
-                        # Authenticate
+                        # Authenticate to Demo Org
                         <br>
                         export PEACEMAKR_APIKEY=d1Maw58P2xCQ8d0GV15n22SQNI6lYXHzWLCTEvNPHnY=
                         <br>
@@ -500,7 +502,7 @@
                         </svg>
                         <div class="ml-3">
                             <dt class="text-lg leading-6 font-medium text-gray-900">
-                                Invite your customers to use their own Key Deriver, in your software
+                                Run your own Key Deriver on your trusted hardware
                             </dt>
                         </div>
                     </div>
@@ -588,7 +590,7 @@
                         </svg>
                         <div class="ml-3">
                             <dt class="text-lg leading-6 font-medium text-gray-900">
-                                End the debates: every customer chose their own threat model
+                                End the debates: every customer chooses their own threat model
                             </dt>
                         </div>
                     </div>
