@@ -4,7 +4,7 @@ class NavigationBar extends HTMLElement {
     }
 
     connectedCallback() {
-        this.innerHTML = `
+        this.insertAdjacentHTML("afterbegin", `
         <link rel="shortcut logo" href="./images/p_logo.png" type="image/x-icon">
         <style>
             .dropdown:hover .dropdown-content {
@@ -221,7 +221,7 @@ class NavigationBar extends HTMLElement {
 </div>
 <!-- Navigation bar end -->
       </header>
-    `;
+    `);
     }
 }
 
