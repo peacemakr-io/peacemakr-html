@@ -115,7 +115,7 @@ class NavigationBar extends HTMLElement {
                                     </svg>
                                     <div class="ml-4">
                                         <p class="text-base font-medium text-gray-900">
-                                            Media
+                                            Blogs
                                         </p>
                                         <p class="mt-1 text-sm text-gray-500">
                                             Learn more about Peacemakr's contributions towards better security practices.
@@ -130,10 +130,10 @@ class NavigationBar extends HTMLElement {
                                     </svg>
                                     <div class="ml-4">
                                         <p class="text-base font-medium text-gray-900">
-                                            Security and coffee
+                                            The Security Podcast
                                         </p>
                                         <p class="mt-1 text-sm text-gray-500">
-                                            Lets talk Security.
+                                            Discover real people overcoming<br>security problems.
                                         </p>
                                     </div>
                                 </a>
@@ -193,7 +193,7 @@ class NavigationBar extends HTMLElement {
                     </a>
 
                     <a href="media.html" class="text-base font-medium text-gray-900 hover:text-gray-700">
-                        Media
+                        Blogs
                     </a>
 
                     <a href="podcast.html" class="text-base font-medium text-gray-900 hover:text-gray-700">
