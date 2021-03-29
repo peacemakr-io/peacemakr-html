@@ -4,6 +4,7 @@ module.exports = {
   purge: ["src/**/*.html"],
   theme: {
     extend: {
+      appearance: ['hover', 'focus'],
       colors: {
         teal: colors.indigo,
         orange: colors.gray
