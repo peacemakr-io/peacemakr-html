@@ -17,7 +17,7 @@ class NavigationBar extends HTMLElement {
 <div class="relative bg-white">
     <div class="max-w-7xl mx-auto px-4 sm:px-6">
         <div class="flex justify-between items-center px-4 py-6 sm:px-6 md:justify-start md:space-x-10">
-            <div class="flex">
+            <div class="flex mr-8">
                 <a href="/">
                     <span class="sr-only">Peacemakr</span>
                     <img class="h-8 w-auto" src="./images/p_logo.png">
