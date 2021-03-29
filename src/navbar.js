@@ -5,6 +5,7 @@ class NavigationBar extends HTMLElement {
 
     connectedCallback() {
         this.innerHTML = `
+        <link rel="shortcut logo" href="./images/p_logo.png" type="image/x-icon">
         <style>
             .dropdown:hover .dropdown-content {
                 display: block;
@@ -19,7 +20,7 @@ class NavigationBar extends HTMLElement {
             <div class="flex justify-start lg:w-0 lg:flex-1">
                 <a href="/">
                     <span class="sr-only">Peacemakr</span>
-                    <img class="h-8 w-auto" src="images/p_logo.png">
+                    <img class="h-8 w-auto" src="./images/p_logo.png">
                 </a>
             </div>
             <div class="-mr-2 -my-2 md:hidden">
