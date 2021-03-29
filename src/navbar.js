@@ -123,20 +123,20 @@ class NavigationBar extends HTMLElement {
                                     </div>
                                 </a>
 
-<!--                                <a href="#" class="-m-3 p-3 flex items-start rounded-lg hover:bg-gray-50">-->
-<!--                                    &lt;!&ndash; Heroicon name: outline/calendar &ndash;&gt;-->
-<!--                                    <svg class="flex-shrink-0 h-6 w-6 text-indigo-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">-->
-<!--                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />-->
-<!--                                    </svg>-->
-<!--                                    <div class="ml-4">-->
-<!--                                        <p class="text-base font-medium text-gray-900">-->
-<!--                                            Security and coffee-->
-<!--                                        </p>-->
-<!--                                        <p class="mt-1 text-sm text-gray-500">-->
-<!--                                            Lets talk Security by the fire place.-->
-<!--                                        </p>-->
-<!--                                    </div>-->
-<!--                                </a>-->
+                                <a href="podcast.html" class="-m-3 p-3 flex items-start rounded-lg hover:bg-gray-50">
+                                    <!-- Heroicon name: outline/calendar -->
+                                    <svg class="flex-shrink-0 h-6 w-6 text-indigo-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                                    </svg>
+                                    <div class="ml-4">
+                                        <p class="text-base font-medium text-gray-900">
+                                            Security and coffee
+                                        </p>
+                                        <p class="mt-1 text-sm text-gray-500">
+                                            Lets talk Security.
+                                        </p>
+                                    </div>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -196,9 +196,9 @@ class NavigationBar extends HTMLElement {
                         Media
                     </a>
 
-<!--                    <a href="#" class="text-base font-medium text-gray-900 hover:text-gray-700">-->
-<!--                        Security and coffee-->
-<!--                    </a>-->
+                    <a href="podcast.html" class="text-base font-medium text-gray-900 hover:text-gray-700">
+                        Security Talks
+                    </a>
 
                     <a href="pricing.html" class="text-base font-medium text-gray-900 hover:text-gray-700">
                         Pricing
