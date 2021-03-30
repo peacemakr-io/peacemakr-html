@@ -4,11 +4,11 @@
   "description": "peacemakr.io website",
   "main": "index.js",
   "scripts": {
-    "clean-localdev": "rm -rf ./.cache ./localdev",
-    "clean-prod": "rm -rf ./.cache ./docs",
+    "clean-gulp": "rm -f ./parcel-debug-*.log && rm -rf gulp-pre-build && mkdir gulp-pre-build && cp -a ./src/. ./gulp-pre-build/ && gulp fileinclude",
+    "clean-prod": "rm -rf ./.cache ./docs && npm run clean-gulp",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "npm run clean-localdev && parcel -d ./localdev src/index.html --public-url /",
-    "build": "npm run clean-prod && parcel build -d ./docs src/index.html --global navbar.js --public-url / && cp CNAME favicon.ico ./docs"
+    "build": "npm run clean-prod && parcel build -d ./docs gulp-pre-build/index.html --global navbar.js --public-url / --log-level 5 && cp CNAME favicon.ico ./docs",
+    "start": "npm run build && parcel ./docs/index.html"
   },
   "author": "",
   "license": "ISC",
@@ -17,6 +17,8 @@
     "@tailwindcss/postcss7-compat": "^2.0.2",
     "@tailwindcss/typography": "^0.4.0",
     "autoprefixer": "^9.8.6",
+    "gulp": "^4.0.2",
+    "gulp-file-include": "^2.3.0",
     "postcss": "^7.0.35",
     "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.0.2",
     "tailwindcss-aspect-ratio": "latest"
