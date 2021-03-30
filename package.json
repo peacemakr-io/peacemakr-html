@@ -4,10 +4,12 @@
   "description": "peacemakr.io website",
   "main": "index.js",
   "scripts": {
-    "clean-gulp": "rm -f ./parcel-debug-*.log && rm -rf gulp-pre-build && rm -rf localdev && mkdir gulp-pre-build && cp -a ./src/. ./gulp-pre-build/ && gulp fileinclude",
+    "clean-gulp": "rm -f ./parcel-debug-*.log && rm -rf gulp-pre-build && mkdir gulp-pre-build && cp -a ./src/. ./gulp-pre-build/ && gulp fileinclude",
+    "clean-localdev": "rm -rf ./.cache ./localdev && npm run clean-gulp",
     "clean-prod": "rm -rf ./.cache ./docs && npm run clean-gulp",
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "npm run clean-prod && parcel build -d ./docs gulp-pre-build/index.html --global navbar.js --public-url / --log-level 5 && cp CNAME favicon.ico ./docs",
+    "localdev": "npm run clean-localdev && parcel -d ./localdev src/index.html --public-url /",
     "start": "npm run build && parcel ./docs/index.html"
   },
   "author": "",

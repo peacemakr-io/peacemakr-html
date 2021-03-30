@@ -17,7 +17,10 @@ npm run start
 ```
 npm run build
 ```
-
+4. Run locally with hot-swapping enabled (will not have anything replaced by gulp though)
+```angular2html
+npm run localdev
+```
 Oh crap. The thing built for prod is broken, but my local build looks fine, what do I do?
 ```
 npm run build
