@@ -1,3 +1,5 @@
 node_modules
-localdev
 .cache
+/gulp-pre-build/
+parcel-debug*
+/localdev/
