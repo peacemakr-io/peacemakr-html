@@ -16,6 +16,7 @@
   "license": "ISC",
   "homepage": "https://peacemakr.io",
   "dependencies": {
+    "@tailwindcss/aspect-ratio": "^0.2.0",
     "@tailwindcss/postcss7-compat": "^2.0.2",
     "@tailwindcss/typography": "^0.4.0",
     "autoprefixer": "^9.8.6",
