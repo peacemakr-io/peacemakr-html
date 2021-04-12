@@ -17,7 +17,7 @@ npm run start
 ```
 npm run build
 ```
-4. Run locally with hot-swapping enabled (will not have anything replaced by gulp though)
+4. Run locally with hot-swapping enabled (loads diff super fast)
 ```angular2html
 npm run localdev
 ```
