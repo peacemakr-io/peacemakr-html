@@ -1,7 +1,7 @@
 const colors = require("tailwindcss/colors");
 
 module.exports = {
-  purge: ["gulp-pre-build/**/*.html"],
+  purge: ["src/**/*.html"],
   theme: {
     extend: {
       appearance: ['hover', 'focus'],

@@ -4,11 +4,10 @@
   "description": "peacemakr.io website",
   "main": "index.js",
   "scripts": {
-    "clean-gulp": "rm -f ./parcel-debug-*.log && rm -rf gulp-pre-build && mkdir gulp-pre-build && cp -a ./src/. ./gulp-pre-build/ && gulp fileinclude",
-    "clean-localdev": "rm -rf ./.cache ./localdev && npm run clean-gulp",
-    "clean-prod": "rm -rf ./.cache ./docs && npm run clean-gulp",
+    "clean-localdev": "rm -rf ./.cache ./localdev",
+    "clean-prod": "rm -rf ./.cache ./docs",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "npm run clean-prod && parcel build -d ./docs gulp-pre-build/index.html --global navbar.js --public-url / --log-level 5 && cp CNAME favicon.ico ./docs",
+    "build": "npm run clean-prod && parcel build -d ./docs src/index.html --global navbar.js --public-url / --log-level 5 && cp CNAME favicon.ico ./docs",
     "localdev": "npm run clean-localdev && parcel -d ./localdev src/index.html --public-url /",
     "start": "npm run build && parcel ./docs/index.html"
   },
@@ -25,8 +24,6 @@
     "tailwindcss-aspect-ratio": "latest"
   },
   "devDependencies": {
-    "gulp": "^4.0.2",
-    "gulp-file-include": "^2.3.0",
     "parcel-bundler": "latest",
     "postcss-modules": "latest"
   }
