@@ -93,25 +93,7 @@
                 </div>
                 <div class="mt-12 lg:mt-0 lg:col-span-2">
                     <dl class="mt-4 space-y-4 divide-y divide-gray-200">
-                        <div class="pt-0">
-                            <dt class="text-lg">
-                                <!-- Expand/collapse question button -->
-                                <button aria-controls="faq" aria-expanded="false" class="accordion text-left w-full flex justify-between items-start text-gray-400" type="button">
-                                    <span class="font-medium text-gray-900">
-                                        What is Peacemakr?
-                                    </span>
-                                    <span class="ml-6 h-7 flex items-center">
-                                        <svg aria-hidden="true" class="rotate-0 h-6 w-6 transform" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" />
-                                        </svg>
-                                    </span>
-                                </button>
-                                <div class="panel text-gray-500">
-                                    <p>Peacemaker delivers the data protection solution that unlocks the full value of multi-tenant SaaS and Cloud API offerings with customers that have rigorous data security requirements. Specifically, we provide drop-in Application-Layer Encryption and Key Ownership technologies.</p>
-                                    <p>Peacemakr’s Policy-Based Key Lifecycle Management and Secure Key Delivery systems manage and distribute keys to authorized clients. The only thing you need to do is decide what data to protect. Then your customers can bring their own keys and security policies to protect their data in your system.</p>
-                                </div>
-                            </dt>
-                        </div>
+                        
                         <div class="pt-4">
                             <dt class="text-lg">
                                 <!-- Expand/collapse question button -->
@@ -126,17 +108,17 @@
                                     </span>
                                 </button>
                                 <div class="panel text-gray-500">
-                                    <p>There is no standard for application-layer encryption, and in our increasingly uncertain world, there’s just not enough data security engineers to continue re-build one-offs.</p>
+                                    <p>Building data security mechanisms in-house is expensive and time-consuming because there's no standard for application-layer data security. Not enough data security engineers in the world meet the demand. Data Security tools available in the marketplace today are just tools and bring with them an implicit expectation that you will build a bespoke solution. </p>
                                 </div>
                             </dt>
                         </div>
 
-                        <div class="pt-4">
+                        <div class="pt-0">
                             <dt class="text-lg">
                                 <!-- Expand/collapse question button -->
                                 <button aria-controls="faq" aria-expanded="false" class="accordion text-left w-full flex justify-between items-start text-gray-400" type="button">
                                     <span class="font-medium text-gray-900">
-                                        What is Application-Layer Encryption, exactly?
+                                        What is Peacemakr?
                                     </span>
                                     <span class="ml-6 h-7 flex items-center">
                                         <svg aria-hidden="true" class="rotate-0 h-6 w-6 transform" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -145,11 +127,30 @@
                                     </span>
                                 </button>
                                 <div class="panel text-gray-500">
-                                    <p>With Application-Layer Encryption, we strive for data to be encrypted for as long as possible. Ideally, we encrypt the data as soon as it’s created and only decrypt it only when necessary. This requires us to encrypt and decrypt data within applications themselves.</p>
+                                    <p>Peacemakr is a system that delivers key material across a complex ecosystem of software and helps that software use those keys correctly to encrypt and decrypt data. This allows your software to integrate end-to-end encryption into any application, quickly. </p>
+                                </div>
+                            </dt>
+                        </div>
+                        
 
-                                    <p>In contrast, SSL/TLS only protects data when it is in transit, leaving data exposed everywhere else. This allows bad actors many chances to steal the data from databases, applications, in logs, proxies, or even on the disk. With Peacermakr Application-Layer encryption, the data can be protected as soon as it’s created and remains encrypted for the data’s entire lifecycle.</p>
+                        <div class="pt-4">
+                            <dt class="text-lg">
+                                <!-- Expand/collapse question button -->
+                                <button aria-controls="faq" aria-expanded="false" class="accordion text-left w-full flex justify-between items-start text-gray-400" type="button">
+                                    <span class="font-medium text-gray-900">
+                                        Why do I need End-to-End-Encryption?
+                                    </span>
+                                    <span class="ml-6 h-7 flex items-center">
+                                        <svg aria-hidden="true" class="rotate-0 h-6 w-6 transform" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" />
+                                        </svg>
+                                    </span>
+                                </button>
+                                <div class="panel text-gray-500">
+                                    <p>SSL/TLS only protects data when it is in transit. Encryption at rest only protects data when it is on disk. Both of these leave data exposed everywhere else. This allows threats many chances to steal the data from databases, applications, in logs, proxies, or just by reading the disk.</p>
+                                    <p> End-to-End-Encryption inside your application protects the data as soon as it’s created. Your data’s entire lifecycle is now protected, eliminating unessesary risks to data leaks.</p>
 
-                                    <p>For example, consider a log collection system that transmits data to a log aggregator. If you only encrypt with TLS, then the logs are exposed on both the original system and in the aggregator. However, by encrypting the logs as soon as they are produced with Peacemakr’s Application-Layer Encryption, then the logs are protected in all systems. The Application-Layer Encryption enabled customers to use a SaaS provider to aggregate logs without having to trust a multi-tenant cloud.</p>
+                                    <p>For example, consider a log collection system that transmits data to a log aggregator. If you only encrypt with TLS, then the logs are exposed on both the original system and in the aggregator. However, by encrypting the logs as soon as they are produced with Peacemakr’s End-to-End-Encryption, then the logs are protected in all systems. The Application-Layer Encryption enabled customers to use a SaaS provider to aggregate logs without having to trust a multi-tenant cloud.</p>
                                 </div>
                             </dt>
                         </div>
@@ -158,7 +159,7 @@
                                 <!-- Expand/collapse question button -->
                                 <button aria-controls="faq" aria-expanded="false" class="accordion text-left w-full flex justify-between items-start text-gray-400" type="button">
                                     <span class="font-medium text-gray-900">
-                                        What are the challenges of building Application-Layer Encryption systems?
+                                        What are the challenges of building End-to-End-Encryption systems?
                                     </span>
                                     <span class="ml-6 h-7 flex items-center">
                                         <svg aria-hidden="true" class="rotate-0 h-6 w-6 transform" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -177,7 +178,7 @@
                                 <!-- Expand/collapse question button -->
                                 <button aria-controls="faq" aria-expanded="false" class="accordion text-left w-full flex justify-between items-start text-gray-400" type="button">
                                     <span class="font-medium text-gray-900">
-                                        What is Key Ownership, exactly?
+                                        Where do the keys come from in Peacemakr?
                                     </span>
                                     <span class="ml-6 h-7 flex items-center">
                                         <svg aria-hidden="true" class="rotate-0 h-6 w-6 transform" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -186,26 +187,7 @@
                                     </span>
                                 </button>
                                 <div class="panel text-gray-500">
-                                    <p>Key Ownership enforces data ownership, even when that data is inside systems that you do not control. Encrypting data with your own keys ensures a strong sense of security in a multi-tenant environment by protecting data encrypted with your keys from malicious or negligent access. This way, components in an external system can only access your data with your explicit authorization.</p>
-                                </div>
-                            </dt>
-                        </div>
-
-                        <div class="pt-4">
-                            <dt class="text-lg">
-                                <!-- Expand/collapse question button -->
-                                <button aria-controls="faq" aria-expanded="false" class="accordion text-left w-full flex justify-between items-start text-gray-400" type="button">
-                                    <span class="font-medium text-gray-900">
-                                        What are the challenges of building Key Ownership systems?
-                                    </span>
-                                    <span class="ml-6 h-7 flex items-center">
-                                        <svg aria-hidden="true" class="rotate-0 h-6 w-6 transform" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" />
-                                        </svg>
-                                    </span>
-                                </button>
-                                <div class="panel text-gray-500">
-                                    <p>All the challenges of an Application-layer Encryption system apply to a Key Ownership system, but with the added complexity of managing cross-organization authorizations.</p>
+                                    <p>Keys come from your Key Derivers. Everyone starts with a Key Deriver in the cloud, but you can run these modular components wherever you need. </p>
                                 </div>
                             </dt>
                         </div>
@@ -224,7 +206,7 @@
                                     </span>
                                 </button>
                                 <div class="panel text-gray-500">
-                                    <p>The Key Deriver is what produces all the symmetric keys. It’s a software package that you can run on any Unix platform to your own exacting standards.</p>
+                                    <p>The Key Deriver is what produces all your symmetric keys. It’s a software package that you can run on any Unix platform.</p>
                                 </div>
                             </dt>
                         </div>
@@ -234,7 +216,7 @@
                                 <!-- Expand/collapse question button -->
                                 <button aria-controls="faq" aria-expanded="false" class="accordion text-left w-full flex justify-between items-start text-gray-400" type="button">
                                     <span class="font-medium text-gray-900">
-                                        Why Do I Care?
+                                        Does it matter where I run a Key Deriver?
                                     </span>
                                     <span class="ml-6 h-7 flex items-center">
                                         <svg aria-hidden="true" class="rotate-0 h-6 w-6 transform" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -243,8 +225,8 @@
                                     </span>
                                 </button>
                                 <div class="panel text-gray-500">
-                                    <P>When your Key Deriver is self-hosted, the data encrypted with your keys are protected against the same threat models as protect your Key Deriver.</P>
-                                    <P>In order to make things easy, we host the first Key Deriver for you. Whenever you’re ready to bring your key ownership in-house you have the option to relocate your Key Deriver. You can do this relocation over and over; in fact, you can do it any time you rotate your keys.</P>
+                                    <P>It depend on your threat model. When your Key Deriver is self-hosted, your keys are protected against the same threat models as protect your Key Deriver.</P>
+                                    <P>In order to make things easy, we host the first Key Deriver for you in the cloud. If you need to bring your Key Deriver in-house you have the option to relocate your Key Deriver. You can do this relocation over and over; in fact, you can do it any time you rotate your keys.</P>
                                 </div>
                             </dt>
                         </div>
@@ -254,7 +236,7 @@
                                 <!-- Expand/collapse question button -->
                                 <button aria-controls="faq" aria-expanded="false" class="accordion text-left w-full flex justify-between items-start text-gray-400" type="button">
                                     <span class="font-medium text-gray-900">
-                                        Where do my Keys go?
+                                        How doe keys get into my clients?
                                     </span>
                                     <span class="ml-6 h-7 flex items-center">
                                         <svg aria-hidden="true" class="rotate-0 h-6 w-6 transform" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -263,7 +245,7 @@
                                     </span>
                                 </button>
                                 <div class="panel text-gray-500">
-                                    <p>Once a key is derived it’s encrypted and delivered to clients you explicitly authorize. Not even Peacemakr can snoop on that key material.</p>
+                                    <p>A client is anything software that integrates with and registers an SDK. Once a key is derived it’s encrypted with the client's public asymmetric key and delivered to that specific authorized client. Not even Peacemakr can snoop on that key material. For the strongest zero-trust threat model, you'd need to whitelist your trusted Certificate Authority and sign your clients and Key Derivers public keys (yes, we have an API for that).</p>
                                 </div>
                             </dt>
                         </div>
@@ -273,7 +255,7 @@
                                 <!-- Expand/collapse question button -->
                                 <button aria-controls="faq" aria-expanded="false" class="accordion text-left w-full flex justify-between items-start text-gray-400" type="button">
                                     <span class="font-medium text-gray-900">
-                                        What is an Authorized Client?
+                                        What is an Authorized Collaborator?
                                     </span>
                                     <span class="ml-6 h-7 flex items-center">
                                         <svg aria-hidden="true" class="rotate-0 h-6 w-6 transform" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -283,7 +265,7 @@
                                 </button>
                                 <div class="panel text-gray-500">
                                     <p>Peacemakr’s network provides the basis for secure collaboration.</p>
-                                    <p>At Peacemakr, we divide our customers into Organizations. Your account belongs to an Organization that defines an authorization scope for your keys. You can share some of the keys in your Organization with any Organization in the Peacemakr network. You can enforce ownership over your keys (and therefore your data) and end a collaboration at any time.</p>
+                                    <p>At Peacemakr, we divide our customers into Organizations. Your account belongs to an Organization that defines an authorization scope for your keys. You can share some of the keys in your Organization with any Organization in the Peacemakr network. Even when your authorized a collaborator, you control your keys and security policies, even in someone else's system. End a collaboration at any time, and their access to your keys are revoked.</p>
                                 </div>
                             </dt>
                         </div>
