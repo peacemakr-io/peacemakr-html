@@ -106,24 +106,6 @@
                 <div class="mt-12 lg:mt-0 lg:col-span-2">
                     <dl class="mt-4 space-y-4 divide-y divide-gray-200">
                         
-                        <div class="pt-4">
-                            <dt class="text-lg">
-                                <!-- Expand/collapse question button -->
-                                <button aria-controls="faq" aria-expanded="false" class="accordion text-left w-full flex justify-between items-start text-gray-400" type="button">
-                                    <span class="font-medium text-gray-900">
-                                        Why does Data Security need to be Reimagined?
-                                    </span>
-                                    <span class="ml-6 h-7 flex items-center">
-                                        <svg aria-hidden="true" class="rotate-0 h-6 w-6 transform" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" />
-                                        </svg>
-                                    </span>
-                                </button>
-                                <div class="panel text-gray-500">
-                                    <p>Building data security mechanisms in-house is expensive and time-consuming because there's no standard for application-layer data security. There are not enough data security engineers in the world meet the demand. The data security tools available in the marketplace are just tools and require you to build a bespoke solution. </p>
-                                </div>
-                            </dt>
-                        </div>
 
                         <div class="pt-0">
                             <dt class="text-lg">
@@ -356,6 +338,66 @@
                                 </div>
                             </dt>
                         </div>
+
+                        <div class="pt-4">
+                            <dt class="text-lg">
+                                <!-- Expand/collapse question button -->
+                                <button aria-controls="faq" aria-expanded="false" class="accordion text-left w-full flex justify-between items-start text-gray-400" type="button">
+                                    <span class="font-medium text-gray-900">
+                                        Does encryption and decryption work offline?
+                                    </span>
+                                    <span class="ml-6 h-7 flex items-center">
+                                        <svg aria-hidden="true" class="rotate-0 h-6 w-6 transform" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" />
+                                        </svg>
+                                    </span>
+                                </button>
+                                <div class="panel text-gray-500">
+                                    <p> Yes. Once keys and security policies are delivered to a client, the client can encrypt and decrypt offline. You can either pre-install keys or the client can jump online at least once to receive key material from your Key Derivers.</p>
+                                </div>
+                            </dt>
+                        </div>
+
+                        <div class="pt-4">
+                            <dt class="text-lg">
+                                <!-- Expand/collapse question button -->
+                                <button aria-controls="faq" aria-expanded="false" class="accordion text-left w-full flex justify-between items-start text-gray-400" type="button">
+                                    <span class="font-medium text-gray-900">
+                                        What's the difference between Hasicorp's Vault and Peaceamkr?
+                                    </span>
+                                    <span class="ml-6 h-7 flex items-center">
+                                        <svg aria-hidden="true" class="rotate-0 h-6 w-6 transform" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" />
+                                        </svg>
+                                    </span>
+                                </button>
+                                <div class="panel text-gray-500">
+                                    <p> Hashicorp's API-driven your software sends data to Vault, and it encrypts or decrypt it for you. The Vault service not only becomes a single point of failure because it holds all the keys, but, it gets to see all your secret data in the clear. Besides, it's an entire service that you have to standup and run inhouse.</p><p>With Peacemakr it's your application that encrypts and decrypts data locally (via our open-source SDKs), so your data never leaves your application with Peacemakr. This is what makes Peacemakr End-to-End-Encrypted.</p>
+                                </div>
+                            </dt>
+                        </div>
+
+                        <div class="pt-4">
+                            <dt class="text-lg">
+                                <!-- Expand/collapse question button -->
+                                <button aria-controls="faq" aria-expanded="false" class="accordion text-left w-full flex justify-between items-start text-gray-400" type="button">
+                                    <span class="font-medium text-gray-900">
+                                        What are the benefits of using Keys that the company or their customers have in their control?
+                                    </span>
+                                    <span class="ml-6 h-7 flex items-center">
+                                        <svg aria-hidden="true" class="rotate-0 h-6 w-6 transform" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" />
+                                        </svg>
+                                    </span>
+                                </button>
+                                <div class="panel text-gray-500">
+                                    <p> Separate security domains are the ultimate form of data ownership and control. By manipulating key access you can securely grant and revoke access on a case by case basis. Additionally, since key accesses are logged and each encrypted object can be uniquely identified, it allows your data to have complete access tracking for any (or all) data object(s) in your system.</p>
+                                </div>
+                            </dt>
+                        </div>
+
+
+
 
 
                     </dl>
