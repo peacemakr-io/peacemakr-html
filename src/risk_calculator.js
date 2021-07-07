@@ -45,7 +45,7 @@ var longestBreach = 558
 var largestGDPRFines = 55000000
 var lowestGDPRFine = 5000000
 
-var CCPAPerRecord = 7500
+var CCPAPerRecord = 2500
 
 var NAICFineTotals = 50000
 
@@ -78,8 +78,8 @@ window.getFines = function getFines(dataType, numRecords) {
 
   // CCPA
   if (dataType == 3) {
-    // This is just insane, so take 1/2 of the max
-    fineCost = numRecords * CCPAPerRecord / 2
+    // This is just insane, so take 1/4 of the max
+    fineCost = numRecords * CCPAPerRecord / 4
   }
 
   // NAIC
@@ -131,17 +131,18 @@ window.showVal = function showVal() {
     estimatedDaysDisplay = document.getElementById("estimated_days_display")
   }
 
+  // Update input displays
+  dataTypeDisplay.innerHTML = dataTypeBarToText(dataTypeBar.value)
+  totalRecordsDisplay.innerHTML = numberWithCommas(totalRecordsBar.value)
+
   // Trade Secrets are a special case.
   if (dataTypeBar.value == "8") {
+
     estimatedCostDisplay.innerHTML = "Your Company"
     estimatedFinesDisplay.innerHTML = "$" + numberWithCommas(getFines(dataTypeBar.value, totalRecordsBar.value))
     estimatedDaysDisplay.innerHTML = "Not Recoverable"
     return
   }
-
-  // Update input displays
-  dataTypeDisplay.innerHTML = dataTypeBarToText(dataTypeBar.value)
-  totalRecordsDisplay.innerHTML = numberWithCommas(totalRecordsBar.value)
 
   // Compute Costs
   estimatedCostDisplay.innerHTML = "$" + numberWithCommas(getEstimatedCost(dataTypeBar.value, totalRecordsBar.value))
