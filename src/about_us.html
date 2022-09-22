@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Peacemakr | about us</title>
+    <title>Peacemakr | about Peacemakr, our mission and the team</title>
     <meta name="viewport" content="width=device-width,minimum-scale=1">
     <!-- <link href="/dist/css/app.3f5912c237ddd38c8e76debe081c7ca7.css" rel="stylesheet">
     <link rel="stylesheet" href="/css/peacemakr.css"> -->
@@ -26,6 +26,8 @@
           content="Data Security simplified."/>
     <script src="navbar.js" type="text/javascript"></script>
 
+    @@include('./navigation_styling.html')
+
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-69K0GEH6J9"></script>
     <script>
@@ -37,9 +39,9 @@
     </script>
     <!-- Google Tag Manager -->
     <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
     })(window,document,'script','dataLayer','GTM-NWVP7S7');</script>
     <!-- End Google Tag Manager -->
 
@@ -61,214 +63,38 @@
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NWVP7S7"
                   height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
+<!--Navigation bar-->
+@@include('./navigation.html'
+)<!--Main body-->
 <div class="relative bg-white overflow-hidden">
     <div class="max-w-7xl mx-auto">
-        <div class="relative z-10 pb-8 bg-white sm:pb-16 md:pb-20 lg:max-w-2xl lg:w-full lg:pb-28 xl:pb-32">
-            <svg class="hidden lg:block absolute right-0 inset-y-0 h-full w-48 text-white transform translate-x-1/2"
-                 fill="currentColor" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true">
-                <polygon points="50,0 100,0 50,100 0,100"/>
-            </svg>
-
-            <!-- Navigation bar-->
-            <div class="relative pt-6 px-4 sm:px-6 lg:px-8">
-                <nav id="site-menu" class="relative flex items-center justify-between sm:h-10 lg:justify-start"
-                     aria-label="Global">
-                    <div class="flex items-center flex-grow flex-shrink-0 lg:flex-grow-0">
-                        <div class="flex items-center justify-between w-full md:w-auto">
-                            <a href="/">
-                                <span class="sr-only">Peacemakr</span>
-                                <img class="h-6 w-auto sm:h-7"
-                                     src="./images/p_logo.png">
-                            </a>
-                            <div class="-mr-2 flex items-center md:hidden">
-                                <button type="button"
-                                        class="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500"
-                                        id="main-menu" aria-haspopup="true"
-                                        onclick="navToggle();">
-                                    <span class="sr-only">Open main menu</span>
-                                    <!-- Heroicon name: menu -->
-                                    <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none"
-                                         viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                              d="M4 6h16M4 12h16M4 18h16"/>
-                                    </svg>
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="hidden md:block md:ml-10 md:pr-4 md:space-x-8">
-                        
-                        <a href="solutions.html" class="font-medium text-gray-500 hover:text-indigo-600">Solutions</a>
-
-                        <a href="engineers.html" class="font-medium text-gray-500 hover:text-indigo-600">Engineers</a>
-
-                        <a href="pricing.html" class="font-medium text-gray-500 hover:text-indigo-600">Pricing</a>
-
-                        <a href="media.html" class="font-medium text-gray-500 hover:text-indigo-600">Media</a>
-
-                        <a> <span class="text-2xl text-gray-900"> | </span> </a>
-
-                        <a href="https://admin.peacemakr.io/#/login"
-                           class="bg-indigo-600 rounded-lg px-3 py-1 font-medium text-gray-100 hover:bg-indigo-700">Login</a>
-                    </div>
-                </nav>
-            </div>
-
-            <!--
-      Mobile menu, show/hide based on menu open state.
-
-      Entering: "duration-150 ease-out"
-        From: "opacity-0 scale-95"
-        To: "opacity-100 scale-100"
-      Leaving: "duration-100 ease-in"
-        From: "opacity-100 scale-100"
-        To: "opacity-0 scale-95"
-    -->
-
-            <div id="menu" class="z-50 absolute top-0 inset-x-0 p-2 transition transform origin-top-right hidden">
-                <div class="rounded-lg shadow-md bg-white ring-1 ring-black ring-opacity-5 overflow-hidden">
-                    <div class="px-5 pt-4 flex items-center justify-between">
-                        <div>
-                            <img class="h-6 w-auto"
-                                 src="./images/p_logo.png" alt="">
-                        </div>
-                        <div class="-mr-2">
-                            <button type="button"
-                                    class="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500"
-                                    onclick="navToggle();">
-                                <span class="sr-only">Close main menu</span>
-                                <!-- Heroicon name: x -->
-                                <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none"
-                                     viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                          d="M6 18L18 6M6 6l12 12"/>
-                                </svg>
-                            </button>
-                        </div>
-                    </div>
-                    <div role="menu" aria-orientation="vertical" aria-labelledby="main-menu">
-                        <div class="px-2 pt-2 pb-3 space-y-1" role="none">
-                            <a href="/"
-                               class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50"
-                               role="menuitem">Home</a>
-
-                            <a href="solutions.html"
-                               class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50"
-                               role="menuitem">Solutions</a>
-
-                               <a href="engineers.html"
-                               class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50"
-                               role="menuitem">Engineers</a>
-
-                            <a href="pricing.html"
-                               class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50"
-                               role="menuitem">Pricing</a>
-
-                            <a href="media.html"
-                               class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50"
-                               role="menuitem">Media</a>
-
-                        </div>
-                        <div role="none">
-                            <a href="https://admin.peacemakr.io/#/login"
-                               class="block w-full px-5 py-3 text-center font-medium text-indigo-600 bg-gray-50 hover:bg-gray-100"
-                               role="menuitem">
-                                Login
-                            </a>
-                        </div>
-                        <div role="none">
-                            <a href="https://admin.peacemakr.io/#/signup"
-                               class="block w-full px-5 py-3 text-center font-medium text-indigo-600 bg-gray-50 hover:bg-gray-100"
-                               role="menuitem">
-                                Login
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- End navigation bar -->
+        <div class="relative z-8 pb-8 bg-white sm:pb-16 md:pb-20 lg:max-w-2xl lg:w-full lg:pb-28 xl:pb-32">
 
             <main class="mt-10 mx-auto max-w-7xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-28">
                 <div class="sm:text-center lg:text-left">
                     <h1 class="text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl">
-                        <span class="block xl:inline">Peacemakr <br/></span>
-                        <span class="block text-indigo-600 xl:inline">About Us</span>
+                        <span class="block text-indigo-600 xl:inline">Our Funding Story<br></span>
+                    
                     </h1>
+                    <p class="mt-10 text-lg text-gray-600">
+                    Peacemakr co-founders are security professionals who are passionate about
+                    data security. Through extensive careers in security and privacy domains the team recongized the need to protect data
+                    through simless, comprehensise and robus sulotion has emerged. The Team has started Peacemakr in 2019 to build 
+                    a highly-available and trusted solution to protect all types of data at a high scale.
+                      </p>
                 </div>
             </main>
         </div>
     </div>
-    <div class="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
-        <img class="h-56 w-full object-cover sm:h-72 md:h-96 lg:w-full lg:h-full" src="/images/about_bg.jpg" alt="">
-    </div>
 </div>
 
-<!-- content of About Us page -->
-<div class="relative py-16 bg-white overflow-hidden">
-    <div class="hidden lg:block lg:absolute lg:inset-y-0 lg:h-full lg:w-full">
-        <div class="relative h-full text-lg max-w-prose mx-auto" aria-hidden="true">
-            <svg class="absolute top-12 left-full transform translate-x-32" width="404" height="384" fill="none"
-                 viewBox="0 0 404 384">
-                <defs>
-                    <pattern id="74b3fd99-0a6f-4271-bef2-e80eeafdf357" x="0" y="0" width="20" height="20"
-                             patternUnits="userSpaceOnUse">
-                        <rect x="0" y="0" width="4" height="4" class="text-gray-200" fill="currentColor"/>
-                    </pattern>
-                </defs>
-                <rect width="404" height="384" fill="url(#74b3fd99-0a6f-4271-bef2-e80eeafdf357)"/>
-            </svg>
-            <svg class="absolute top-1/2 right-full transform -translate-y-1/2 -translate-x-32" width="404"
-                 height="384" fill="none" viewBox="0 0 404 384">
-                <defs>
-                    <pattern id="f210dbf6-a58d-4871-961e-36d5016a0f49" x="0" y="0" width="20" height="20"
-                             patternUnits="userSpaceOnUse">
-                        <rect x="0" y="0" width="4" height="4" class="text-gray-200" fill="currentColor"/>
-                    </pattern>
-                </defs>
-                <rect width="404" height="384" fill="url(#f210dbf6-a58d-4871-961e-36d5016a0f49)"/>
-            </svg>
-            <svg class="absolute bottom-12 left-full transform translate-x-32" width="404" height="384" fill="none"
-                 viewBox="0 0 404 384">
-                <defs>
-                    <pattern id="d3eb07ae-5182-43e6-857d-35c643af9034" x="0" y="0" width="20" height="20"
-                             patternUnits="userSpaceOnUse">
-                        <rect x="0" y="0" width="4" height="4" class="text-gray-200" fill="currentColor"/>
-                    </pattern>
-                </defs>
-                <rect width="404" height="384" fill="url(#d3eb07ae-5182-43e6-857d-35c643af9034)"/>
-            </svg>
-        </div>
-    </div>
-    <div class="relative px-4 sm:px-6 lg:px-8">
-        <div class="text-lg max-w-prose mx-auto">
-            <h2>
-                <span class="mt-2 block text-3xl text-center leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">Team</span>
-            </h2>
-            <p class="mt-8 text-xl text-gray-500 leading-8">We’re a Silicon Valley, CA startup with 7 battle-scarred engineers and entrepreneurs who reimagine data security for SaaS providers.</p>
-        </div>
 
-        <div class="mt-6 prose prose-indigo prose-lg text-gray-500 mx-auto">
-            <h2><span
-                    class="mt-2 block text-3xl text-center leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">Core Values</span>
-            </h2>
-            <h3>Simplicity</h3>
-            <p>Time is your most valueable asset. Simple and elegant solutions to hard problems are the only way to
-                protect your time and your sanity.</p>
-            <h3>Diversity</h3>
-            <p>Your experiences have shaped who you are, and how you see this world. No one else shares them with
-                you, and yet they have led you to this very moment, along with thousands of others. This is
-                diversity. Innovation precipitates when our diversity mixes with a drive to build a better world.
-            </p>
-            <h3>Security</h3>
-            <p>Everything in this world is temporary. Once we accept this, we can take a step back, look at the
-                bigger picture, and gear up for the risks ahead. We take full advantage of the opportunities, but we
-                do so responsibly.</p>
+<main>
 
-        </div>
-    </div>
-</div>
 
-<!-- footer -->
+
+</main>
+
 <footer class="bg-gray-900">
     <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 md:flex md:items-center md:justify-between lg:px-8">
         <div class="flex justify-center space-x-6 md:order-2">
@@ -306,7 +132,8 @@
         </div>
     </div>
 </footer>
-<script src="./index.js"></script>
+
+<script src="index.js"></script>
 </body>
 
 </html>
